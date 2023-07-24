@@ -1,6 +1,6 @@
 # Welcome to the official blog of PascoByte.
 
-This blog is my personal website where I post about anything i find interesting, from my NFT's to AI and tecj satire to my webapps, tools and games that I plan to make over the comming years.
+This blog is my personal website where I post about anything i find interesting, from my NFT's to AI and tech satire to my webapps, tools and games that I plan to make over the comming years.
 
 Feel free to give me a shoutout if you like the content or contact me if you have nay questions, but please don't missues my contact form for trying to sell me your service because that is not what my contact ofrm is intended for.
 
