@@ -1,0 +1,116 @@
+ @font-face {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Exo_2/Exo2-Italic-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+  }
+  body{
+    font-family: 'Exo 2', sans-serif !important;
+    background: linear-gradient(to bottom, #0A192F, #090E1E);
+    background: -webkit-linear-gradient(top, #0A192F, #090E1E);
+    color: hsl(0, 0%, 96%) !important;
+  }
+  h1,h2,h3{
+    font-family: 'Orbitron', sans-serif !important;
+    color: hsl(0, 0%, 100%) !important;
+  }
+  /* For modern browsers */
+::-webkit-scrollbar {
+  width: 0; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Set the track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Set the thumb background color */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.home-bg{
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+    url('/images/cyberpunk-city.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.is-success{
+  background-color: #c9df34 !important;
+  color: #000000 !important;
+  transition: all ease-in-out 360ms;
+}
+.is-success:hover{
+  background-color: #a5bf23 !important;
+}
+.button{
+  transition: all ease-in-out 360ms;
+}
+.button:hover{
+  transform: scale(.9);
+}
+.navbar,.navbar-menu{
+  background-color: transparent !important;
+}
+.navbar-menu a:hover,.footer-links a:hover{
+  background: none !important;
+  color: #a5bf23 !important;
+}
+.branding{
+  color: #c9df34 !important;
+  font-weight: bold;
+}
+.card-bg{
+  background-color: #1f2937 !important;
+  color: hsl(0, 0%, 96%) !important;
+}
+.card-bg h3{
+  color: #c9df34 !important;
+}
+#single-content a{
+  color: #c9df34 !important;
+  font-weight: bold;
+}
+#single-content h2{
+  color: #c9df34 !important;
+  padding-top: calc(4rem) !important;
+}
+
+#single-content strong{
+  color: #c9df34 !important;
+  font-weight: bolder;
+}
+#TableOfContents ul li a{
+  color: #c9df34 !important;
+  text-decoration: none;
+}
+::marker {
+  color: #c9df34 !important;
+}
+
+.gdpr-banner{
+  display: flex;
+  flex-direction: column;
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: auto;
+  width: fit-content;
+  border-radius: calc(.6rem);
+  border: 1px solid #c9df34;
+}
