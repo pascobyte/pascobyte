@@ -1,0 +1,13 @@
+{{ if eq .Params.page_category "legal" }}
+
+{{ else }}
+<aside class="gdpr-banner card-bg p-5 box has-text-light" id="gdpr-banner">
+    <span class="has-text-white has-text-weight-bold is-size-5">Can I place cookies?</span>
+    <p class="py-5">I know this is annoying but I have to ask, I use cookies for analytics (according to EU rules)</p>
+    <p>By clicking on the buttons below you give me permission to use analytics or not. More info on my <a href="/policies/" target="_blank" class="has-text-success">Policies</a>.</p>
+    <div class="buttons my-5">
+        <button class="button is-success" id="cookies-ja">No Problem</button>
+        <button class="button is-primary is-outlined" id="cookies-nee">Rather Not</button>
+      </div>
+</aside>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ $parentSectionID := .Get "parentSection" }}
+{{ $parentSection := .Page.Site.GetPage "section" $parentSectionID }}
+{{ $pages := where .Site.RegularPages "Section" $parentSectionID }}
+<aside>
+  <nav aria-label="Gerelateerde onderwerpen">
+    <ul>
+      <li><a href="{{ $parentSection.Permalink }}">{{ $parentSection.Title }}</a></li>
+      {{ range $pages }}
+        {{ if eq .Section $parentSectionID }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</aside>

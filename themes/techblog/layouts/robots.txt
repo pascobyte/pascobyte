@@ -1,0 +1,18 @@
+User-agent: *
+Disallow:
+Disallow: /*.md$
+Disallow: /*.toml$
+Disallow: /*.yml$
+Disallow: /*.yaml$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.rss$
+Disallow: /*.txt$
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+Sitemap: {{ .Site.BaseURL }}sitemap.xml

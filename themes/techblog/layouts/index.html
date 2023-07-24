@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <div class="hero is-fullheight home-bg">
+      <div class="hero-body">
+          <div class="columns">
+              <div class="column is-6">
+                  <h1 class="title is-1 pb-2">{{ .Site.Params.headline }}</h1>
+                  <p>{{ .Site.Params.description }}</p>
+                  <hr>
+                  <div class="field is-grouped">
+                      <div class="control is-expanded">
+                        <div class="select is-fullwidth">
+                          <select class="card-bg" id="page-select">
+                            <option disabled selected value="">Where do you want to go?</option>
+                            <option value="/ai/">Artificial Intelligence</option>
+                            <option value="/policies/">Policies</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="control">
+                        <button class="button is-success" onclick="goToSelectedPage()">Go</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+{{ end }}

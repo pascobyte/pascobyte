@@ -1,0 +1,47 @@
+baseURL = 'https://pascobyte.blog/'
+languageCode = 'en-us'
+title = 'PascoByte'
+theme = 'techblog'
+disableKinds = ["taxonomy", "term"]
+disableHugoGeneratorInject = true
+minifyOutput = true
+enableRobotsTXT = true
+
+[params]
+  tagline = "Unleashing Innovation: Explore AI, Blockchain & NFTs!"
+  headline = "Tech Bytes with PascoByte: Unleashing Innovation"
+  description = "Welcome to PascoByte - Where cutting-edge technology meets laughter. Explore AI, blockchain, NFTs, and more, served with humor and wit!"
+  logo = "/images/pascobyte-logo.svg"
+  bio = "/about/"
+
+
+
+
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = true
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = true
+    enableDNT = false
+    simple = false
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = false

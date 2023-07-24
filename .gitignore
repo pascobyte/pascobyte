@@ -1,0 +1,4 @@
+# Ignore folders created by Windows
+$RECYCLE.BIN/
+Thumbs.db
+Desktop.ini

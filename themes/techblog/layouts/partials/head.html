@@ -1,0 +1,36 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    {{/*  <meta name="geo.region" content="NL">
+    <meta name="geo.placename" content="Netherlands">
+    <meta name="geo.position" content="52.1326° N;5.2913° E"> <!-- Optional -->
+    <meta name="geo.region" content="NL"> <!-- Optional -->  */}}
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/bul.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    {{ if .IsHome }}
+        <title>{{ .Site.Title }} | {{ .Site.Params.tagline }}</title>
+
+        {{ if .Site.Params.description }}
+        <meta name="description" content="{{ .Site.Params.description }}">
+        {{ else }}
+        <meta name="description" content="{{ .Summary | truncate 160 }}">
+        {{ end }}
+        
+        {{ else }}
+        <title>{{ .Title }} | {{ .Site.Title }}</title>
+        {{ if .Params.description }}
+        <meta name="description" content="{{ .Description }}">
+        {{ else }}
+        <meta name="description" content="{{ .Summary | truncate 164 }}">
+        {{ end }}
+    {{ end }}
+    <link rel="canonical" href="{{ .Permalink }}" />
+    {{ partial "icons.html" . }}
+    {{ partial "social.html" . }}
+    {{ partial "schema.html" . }}
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head>

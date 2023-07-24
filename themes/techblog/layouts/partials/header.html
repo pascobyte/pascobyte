@@ -1,0 +1,5 @@
+{{ partial "gdpr" . }}
+{{ if .IsHome }}
+{{ else}}
+{{ partial "navbar.html" . }}
+{{ end }}

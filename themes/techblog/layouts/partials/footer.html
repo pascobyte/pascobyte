@@ -1,0 +1,27 @@
+{{ if .IsHome }}
+{{ else }}
+<footer class="section">
+    <div class="container">
+      <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+        <div class="mr-auto mb-2">
+        </div>
+        <nav class="footer-links">
+          <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+            <li class="mr-4"><a class="has-text-light" href="/policies/privacy/" target="_blank">Privacy</a></li>
+            <li class="mr-4"><a class="has-text-light" href="/policies/privacy/#:~:text=used%20by%20Clicky.-,Cookie%20Policy,-Use%20of%20Cookies" target="_blank">Cookies</a></li>
+            <li class="mr-4"><a class="has-text-light" href="/policies/" target="_blank">Policies</a></li>
+            <li><a class="has-text-light" href="https://forms.gle/hV3btW1HizDkfbHy7" target="_blank" rel="nofollow noopener">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+  </footer>
+{{ end }}
+
+
+<script src="/js/main.js"></script>
+
+{{ if eq .Params.page_type "post" }}
+<script src="/js/single.js"></script>
+{{ end }}

@@ -1,0 +1,114 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ .Site.BaseURL }}",
+      "description": "{{ .Site.Params.description }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.Params.logo | absURL }}",
+          "width": "2048",
+          "height": "2048"
+        }
+      }
+    }
+    </script>
+    
+{{ end }}
+
+{{ if eq .Params.page_type "list" }}
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "CollectionPage",
+      "name": "{{ .Title | plainify }}",
+      "description": "{{ .Description }}",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "{{ .Title | plainify }}",
+        "itemListElement": [
+          {{- $length := len .RegularPages -}}
+          {{- range $index, $page := .RegularPages.ByDate.Reverse -}}
+          {
+            "@type": "ListItem",
+            "position": {{ $index | add 1 }},
+            "item": {
+              "@type": "CreativeWork",
+              "name": "{{ $page.Title }}",
+              "url": "{{ $page.Permalink }}",
+              "description": "{{ $page.Description }}"
+            }
+          }{{- if ne $index (sub $length 1) -}},{{- end -}}
+          {{- end -}}
+        ]
+      }
+    }
+    </script>
+{{ end }}
+
+
+{{ if eq .Params.schema "Article" }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ .Title }}",
+    "description": "{{ .Description }}",
+    "url": "{{ .Permalink }}",
+    "image": "{{ .Params.thumbnail | absURL }}",
+    "genre": "{{ .Params.genre }}",
+    "articleBody": "{{ .Content | plainify }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Title }}",
+      "sameAs": "{{ .Site.Params.bio | absURL }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.Params.logo | absURL }}"
+      }
+    },
+    "datePublished": "{{ .Date }}"
+  }
+  </script>
+  
+{{ end }}
+
+{{ if eq .Params.schema "policy" }}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    },
+    "headline": "{{ .Title }}",
+    "description": "{{ .Description }}",
+    "image": "{{ .Params.thumbnail | absURL }}",  
+    "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ .Site.Params.bio | absURL }}"
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.Params.logo | absURL }}"
+      }
+    },
+    "datePublished": "{{ .Date }}"
+  }
+  </script>
+  
+{{ end }}

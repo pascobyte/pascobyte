@@ -1,0 +1,8 @@
+<nav class="breadcrumb my-5" aria-label="breadcrumbs">
+  <ul>
+    {{- range .Ancestors.Reverse }}
+    <li><a href="{{ .RelPermalink }}" class="has-text-light">{{ .Title }}</a></li>
+{{- end }}
+<li><a href="{{ .RelPermalink }}" class="has-text-weight-bold	is-underlined	branding" aria-current="page">{{ .Title }}</a></li>
+  </ul>
+</nav>

@@ -1,0 +1,15 @@
+{
+  "name": "pascobyte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo && purgecss --config purgecss.config.js && npx workbox-cli generateSW workbox-config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "purgecss": "^5.0.0"
+  }
+}
