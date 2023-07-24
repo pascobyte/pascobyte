@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "purgecss --config purgecss.config.js && npx workbox-cli generateSW workbox-config.js"
+    "makesite": "hugo && purgecss --config purgecss.config.js && npx workbox-cli generateSW workbox-config.js"
   },
   "keywords": [],
   "author": "",
