@@ -8,11 +8,14 @@ minifyOutput = true
 enableRobotsTXT = true
 
 [params]
-  tagline = "Unleashing Innovation: Explore AI, Blockchain & NFTs!"
-  headline = "Tech Bytes with PascoByte: Unleashing Innovation"
-  description = "Welcome to PascoByte - Where cutting-edge technology meets laughter. Explore AI, blockchain, NFTs, and more, served with humor and wit!"
+  tagline = "Ingenewaty Meets Tech Satire!"
+  headline = "PascoByte: Unleashing Dutch Wit on Tech Bytes"
+  description = "PascoByte: Where Ingenewaty meets Tech Bytes, crafting code, games, and magic with Dutch wit! Unleashing digital dreams from the Netherlands! 🚀"
   logo = "/images/pascobyte-logo.svg"
   bio = "/about/"
+  twitter = "https://twitter.com/pascobyte"
+  github = "https://github.com/pascobyte"
+  opensea = "https://opensea.io/PascoByte"
 
 
 
