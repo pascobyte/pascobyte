@@ -2,3 +2,5 @@
 $RECYCLE.BIN/
 Thumbs.db
 Desktop.ini
+
+node_modules/
