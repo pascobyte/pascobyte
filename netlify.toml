@@ -1,2 +1,0 @@
-[build]
-command = "HUGO_VERSION=0.115.4 hugo" # Replace "0.80.0" with your Hugo version
