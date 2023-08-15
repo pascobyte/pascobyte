@@ -13,11 +13,13 @@ enableRobotsTXT = true
   description = "PascoByte, a personal blog where I explore AI technology like Bard and ChatGPT plus other interesting topics that the world has to offer."
   logo = "/images/pascobyte-logo.svg"
   bio = "/about/"
+  contact = "https://forms.gle/a6Qb3MYyLbNuFMDDA"
   twitter = "https://twitter.com/pascobyte"
   github = "https://github.com/pascobyte"
   opensea = "https://opensea.io/PascoByte"
 
-
+[permalinks]
+  chatgpt = "/:filename/"
 
 
 [sitemap]
