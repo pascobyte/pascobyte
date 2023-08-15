@@ -1,28 +1,33 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container p-3">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }} logo" width="28" height="28">
-      <span class="subtitle branding pl-3">{{ .Site.Title }}</span>
-    </a>
-
-    <a role="button" class="navbar-burger has-text-white" aria-label="toggle menu" aria-expanded="false" data-target="mainnav">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="mainnav" class="navbar-menu">
-    <div class="navbar-end">
-      <a href="/ai/" class="navbar-item has-text-light">
-        Artificial Intelligence
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img
+          src="{{ .Site.Params.logo | absURL }}"
+          alt="{{ .Site.Title }} logo"
+          width="28"
+          height="28"
+        />
+        <span class="subtitle branding pl-3">{{ .Site.Title }}</span>
       </a>
 
-
+      <a
+        role="button"
+        class="navbar-burger has-text-white"
+        aria-label="toggle menu"
+        aria-expanded="false"
+        data-target="mainnav"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
 
-
-  </div>
+    <div id="mainnav" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/chatgpt/" class="navbar-item has-text-light"> ChatGPT </a>
+      </div>
+    </div>
   </div>
 </nav>

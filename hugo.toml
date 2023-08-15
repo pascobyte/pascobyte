@@ -8,9 +8,9 @@ minifyOutput = true
 enableRobotsTXT = true
 
 [params]
-  tagline = "Ingenewaty Meets Tech Satire!"
-  headline = "PascoByte: Unleashing Dutch Wit on Tech Bytes"
-  description = "PascoByte: Where Ingenewaty meets Tech Bytes, crafting code, games, and magic with Dutch wit! Unleashing digital dreams from the Netherlands! 🚀"
+  tagline = "Exploring AI & Technology"
+  headline = "Exploring AI & Technology"
+  description = "PascoByte, a personal blog where I explore AI technology like Bard and ChatGPT plus other interesting topics that the world has to offer."
   logo = "/images/pascobyte-logo.svg"
   bio = "/about/"
   twitter = "https://twitter.com/pascobyte"

@@ -1,5 +1,5 @@
 ---
-title: "Terms Of Service & Security"
+title: "Terms Of Service"
 description: "This page contains the terms and conditions that apply to the use of our website. By visiting and using pascobyte.blog, you agree to these terms."
 thumbnail: "/images/disclaimer.webp"
 thumbnail_alt: "illustration terms for website content"
@@ -7,6 +7,7 @@ date: 2023-07-20T11:34:13Z
 page_type: "post"
 schema: "beleid"
 ---
+
 Welcome to pascobyte.blog! We're thrilled to have you here. Before you explore our humorous and satirical content, please take a moment to read and understand our Terms of Service and Security Policy. By using our website, you agree to abide by these rules and guidelines.
 
 ## 1. Purpose of pascobyte.blog

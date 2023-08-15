@@ -1,63 +1,58 @@
 {{ if .IsHome }}
 <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ .Site.Title }}",
+    "url": "{{ .Site.BaseURL }}",
+    "description": "{{ .Site.Params.description }}",
+    "publisher": {
+      "@type": "Organization",
       "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}",
-      "description": "{{ .Site.Params.description }}",
-      "publisher": {
-        "@type": "Organization",
-        "name": "{{ .Site.Title }}",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "{{ .Site.Params.logo | absURL }}",
-          "width": "2048",
-          "height": "2048"
-        }
-      },
-      "sameAs": [
-        "{{ .Site.Params.twitter }}",
-        "{{ .Site.Params.github }}",
-        "{{ .Site.Params.opensea }}"
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.Params.logo | absURL }}",
+        "width": "2048",
+        "height": "2048"
+      }
+    },
+    "sameAs": [
+      "{{ .Site.Params.twitter }}",
+      "{{ .Site.Params.github }}",
+      "{{ .Site.Params.opensea }}"
+    ]
+  }
+</script>
+
+{{ end }} {{ if eq .Params.page_type "list" }}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{ .Title | plainify }}",
+    "description": "{{ .Description }}",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "{{ .Title | plainify }}",
+      "itemListElement": [
+        {{- $length := len .RegularPages -}}
+        {{- range $index, $page := .RegularPages.ByDate.Reverse -}}
+        {
+          "@type": "ListItem",
+          "position": {{ $index | add 1 }},
+          "item": {
+            "@type": "CreativeWork",
+            "name": "{{ $page.Title }}",
+            "url": "{{ $page.Permalink }}",
+            "description": "{{ $page.Description }}"
+          }
+        }{{- if ne $index (sub $length 1) -}},{{- end -}}
+        {{- end -}}
       ]
     }
-    </script>
-    
-{{ end }}
-
-{{ if eq .Params.page_type "list" }}
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "CollectionPage",
-      "name": "{{ .Title | plainify }}",
-      "description": "{{ .Description }}",
-      "mainEntity": {
-        "@type": "ItemList",
-        "name": "{{ .Title | plainify }}",
-        "itemListElement": [
-          {{- $length := len .RegularPages -}}
-          {{- range $index, $page := .RegularPages.ByDate.Reverse -}}
-          {
-            "@type": "ListItem",
-            "position": {{ $index | add 1 }},
-            "item": {
-              "@type": "CreativeWork",
-              "name": "{{ $page.Title }}",
-              "url": "{{ $page.Permalink }}",
-              "description": "{{ $page.Description }}"
-            }
-          }{{- if ne $index (sub $length 1) -}},{{- end -}}
-          {{- end -}}
-        ]
-      }
-    }
-    </script>
-{{ end }}
-
-
-{{ if eq .Params.schema "Article" }}
+  }
+</script>
+{{ end }} {{ if eq .Params.schema "article" }}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -83,11 +78,9 @@
     },
     "datePublished": "{{ .Date }}"
   }
-  </script>
-  
-{{ end }}
+</script>
 
-{{ if eq .Params.schema "policy" }}
+{{ end }} {{ if eq .Params.schema "policy" }}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,12 +91,12 @@
     },
     "headline": "{{ .Title }}",
     "description": "{{ .Description }}",
-    "image": "{{ .Params.thumbnail | absURL }}",  
+    "image": "{{ .Params.thumbnail | absURL }}",
     "author": {
       "@type": "Person",
       "name": "{{ .Site.Title }}",
       "url": "{{ .Site.Params.bio | absURL }}"
-    },  
+    },
     "publisher": {
       "@type": "Organization",
       "name": "{{ .Site.Title }}",
@@ -114,6 +107,6 @@
     },
     "datePublished": "{{ .Date }}"
   }
-  </script>
-  
+</script>
+
 {{ end }}
