@@ -21,6 +21,6 @@ keywords:
 
 <!-- {{< figure src="/images/lighthouse.webp" alt="sunset lighthouse" caption=">An elephant at sunset" >}} -->
 
-## == Related Topics ==
+## == Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}
