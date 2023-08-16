@@ -49,6 +49,10 @@ ChatGPT isn't just code; it's your virtual partner in this digital age. Coding, 
 
 As we bid adieu, give a virtual high-five to ChatGPT. Your tech journey just got a whole lot cooler. Until next time, keep rocking that digital swagger! 👊🤖
 
+---
+
+{{< disclaimer >}}
+
 ## == Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}
