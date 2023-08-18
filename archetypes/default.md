@@ -1,10 +1,11 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+headline: "{{ replace .Name "-" " " | title }}"
 description: ""
 thumbnail: ""
 thumbnail_alt: ""
 date: {{ .Date }}
-page_type: "post"
+type: "post"
 schema: "article"
 keywords:
   - ChatGPT

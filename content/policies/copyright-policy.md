@@ -1,10 +1,11 @@
 ---
 title: "Copyright Policy"
+headline: "Copyright Policy"
 description: "PascoByte copyright policy: Learn about your rights & responsibilities under copyright law & how to protect your content."
 thumbnail: "/images/copyright.webp"
 thumbnail_alt: "@ symbol on green background, representing the copyright."
 date: 2023-08-18T04:05:02-07:00
-page_type: "post"
+type: "post"
 schema: "policy"
 ---
 All content on this website, including text, images, videos, and code, is the property of PascoByte or its content creators. All rights reserved.

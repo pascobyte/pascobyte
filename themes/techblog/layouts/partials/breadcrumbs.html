@@ -3,6 +3,6 @@
     {{- range .Ancestors.Reverse }}
     <li><a href="{{ .RelPermalink }}" class="has-text-light">{{ .Title }}</a></li>
 {{- end }}
-<li><a href="{{ .RelPermalink }}" class="has-text-weight-bold	is-underlined	branding" aria-current="page">{{ .Title }}</a></li>
+<li><a href="{{ .RelPermalink }}" class="has-text-weight-bold	is-underlined	branding is-sr-only" aria-current="page">{{ .Title }}</a></li>
   </ul>
 </nav>

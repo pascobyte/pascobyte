@@ -1,14 +1,13 @@
 ---
 title: "Privacy Policy"
+headline: "Privacy Policy"
 description: "Discover our commitment to data privacy & transparency. Learn how we collect info, secure it, and manage cookies. Opt-in for engaging analytics. Visit now!"
 thumbnail: "/images/data_privacy.webp"
 thumbnail_alt: "A computer monitor connected to several servers on a green background."
 date: 2023-07-20T12:34:13Z
-page_type: "post"
+type: "post"
 schema: "policy"
 ---
-
-# PascoByte Privacy Policy
 
 This Privacy Policy explains how we collect, use, and protect your personal information when you visit and use our website, pascobyte.blog. By visiting and using our website, you agree to the terms outlined in this policy. Please note that this website is intended for individuals aged 16 and above.
 

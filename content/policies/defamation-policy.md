@@ -1,10 +1,11 @@
 ---
 title: "Defamation Policy"
+headline: "Defamation Policy"
 description: "PascoByte prohibits defamation, which is the publication of false or malicious statements that damage a person's reputation. Learn more about our defamation policy."
 thumbnail: "/images/defamation .webp"
 thumbnail_alt: "Image of a crossed-out speech bubble."
 date: 2023-08-16T21:21:57+02:00
-page_type: "post"
+type: "post"
 schema: "policy"
 ---
 

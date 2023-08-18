@@ -1,10 +1,11 @@
 ---
 title: "ChatGPT Stops Before Finishing"
+headline: "ChatGPT Stops Before Finishing"
 description: "ChatGPT Stops Before Finishing: The Hilarious and Unexpected Moments When AI Chatbots Leave Us Hanging"
 thumbnail: "/images/blog/chatgpt-stops-before-finishing.webp"
 thumbnail_alt: "A robot with a speech bubble that says 'MY THINKER needs TINKER.' The robot is looking at a computer screen."
-date: 2023-08-15T17:18:52+02:00
-page_type: "post"
+date: 2023-08-18T20:51:54+02:00
+type: "post"
 schema: "article"
 keywords:
   - ChatGPT

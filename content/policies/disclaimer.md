@@ -1,10 +1,11 @@
 ---
 title: "Disclaimer Policy"
+headline: "Disclaimer Policy"
 description: "PascoByte is a humorous and satirical blog. The content is not meant to be taken seriously. Read the disclaimer to learn more."
 thumbnail: "/images/disclaimer.webp"
 thumbnail_alt: "Warning icon. A black circle with a white exclamation point in the center, on a green background."
 date: 2023-07-20T12:34:13Z
-page_type: "post"
+type: "post"
 schema: "policy"
 ---
 

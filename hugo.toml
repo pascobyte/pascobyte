@@ -4,17 +4,19 @@ title = 'PascoByte'
 theme = 'techblog'
 disableKinds = ["taxonomy", "term"]
 disableHugoGeneratorInject = true
-minifyOutput = true
+minifyOutput = false
 enableRobotsTXT = true
 
 [params]
-  tagline = "Exploring AI & Technology"
-  headline = "Exploring AI & Technology"
-  description = "PascoByte, a personal blog where I explore AI technology like Bard and ChatGPT plus other interesting topics that the world has to offer."
+  tagline = "Explore the latest AI trends, news, and research"
+  headline = "The best place to learn about AI and technology"
+  intro = "Welcome to PascoByte, your one-stop shop for all things AI and technology. We are passionate about sharing the latest news, trends, and research in this exciting field."
+  description = "PascoByte: Stay up-to-date on technology and AI with informative and engaging content."
   logo = "/images/pascobyte-logo.svg"
   bio = "/my-mission/"
   contact = "https://forms.gle/a6Qb3MYyLbNuFMDDA"
   twitter = "https://twitter.com/pascobyte"
+  twitterhandle = "@pascobyte"
   github = "https://github.com/pascobyte"
   opensea = "https://opensea.io/PascoByte"
 

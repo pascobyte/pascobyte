@@ -4,7 +4,7 @@
         <div class="hero-body">
             <div class="columns">
                 <div class="column is-three-fifths section">
-                    <h1 class="title pb-2">{{ .Title }}</h1>
+                    <h1 class="title pb-2 is-capitalized">{{ .Params.headline }}</h1>
                     <h2 class="subtitle is-6">{{ .Description }}</h2>
                     {{ partial "breadcrumbs.html" . }}
                 </div>
@@ -26,7 +26,7 @@
                             <div class="card-content">
                                 <div class="content">
                                     <a href="{{ .Permalink }}">
-                                        <h3 class="title">{{ .Title }}</h3>
+                                        <h3 class="title is-capitalized">{{ .Params.headline }}</h3>
                                     </a>
                                     <p class="has-text-light">{{ .Description }}</p>
                                 </div>

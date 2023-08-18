@@ -2,9 +2,9 @@
 <div class="hero is-fullheight home-bg">
   <div class="hero-body">
     <div class="columns">
-      <div class="column is-6">
-        <h1 class="title is-1 pb-2">{{ .Site.Params.headline }}</h1>
-        <p>{{ .Site.Params.description }}</p>
+      <div class="column is-7">
+        <h1 class="title is-1 pb-2 is-capitalized">{{ .Site.Params.headline }}</h1>
+        <p>{{ .Site.Params.intro }}</p>
         <hr />
         <div class="field is-grouped">
           <div class="control is-expanded">
@@ -12,6 +12,7 @@
               <select class="card-bg" id="page-select">
                 <option disabled selected value="">Pick a topic</option>
                 <option value="/chatgpt/">ChatGPT</option>
+                <option value="/policies/">Policies</option>
               </select>
             </div>
           </div>

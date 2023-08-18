@@ -1,7 +1,9 @@
 ---
 title: "Policies"
-description: "Explore PascoByte's Legal Policies - Articles, Apps, and Tools. No legal jargon, but concise and starting summaries."
+headline: "Policies"
+description: "PascoByte Legal Policies: Plain-English summaries of our articles, apps, and tools."
 date: 2023-07-20T11:34:13Z
-page_category: "legal"
-page_type: "list"
+thumbnail: "/images/tos.webp"
+type: "list"
+schema: "list"
 ---

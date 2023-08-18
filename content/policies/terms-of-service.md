@@ -1,10 +1,11 @@
 ---
 title: "Terms Of Service"
+headline: "Terms Of Service"
 description: "This page contains the terms and conditions that apply to the use of our website. By visiting and using pascobyte.blog, you agree to these terms."
 thumbnail: "/images/tos.webp"
 thumbnail_alt: "Outline of a document on green background"
 date: 2023-07-20T11:34:13Z
-page_type: "post"
+type: "post"
 schema: "policy"
 ---
 
