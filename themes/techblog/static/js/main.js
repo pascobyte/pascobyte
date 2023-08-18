@@ -113,7 +113,7 @@ function goToSelectedPage() {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('/sw.js', { scope: '/' })
       .then(function(registration) {
         console.log('Service Worker registered with scope:', registration.scope);
       })
