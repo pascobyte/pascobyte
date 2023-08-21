@@ -1,4 +1,4 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', () => {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -91,25 +91,9 @@ window.onload = function() {
       noscriptParentElement.appendChild(noscriptElement);
       noscriptElement.appendChild(imgElement);
     }
-    
-    
-   
-};
 
 
-
-
-// direct loading functions
-function goToSelectedPage() {
-  if (window.location.pathname === '/') {
-    const selectElement = document.getElementById('page-select');
-    const selectedValue = selectElement.value;
-
-    if (selectedValue) {
-      window.location.href = selectedValue;
-    }
-  }
-}
+});
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -122,3 +106,17 @@ if ('serviceWorker' in navigator) {
       });
   });
 }
+
+   // direct loading functions
+   function goToSelectedPage() {
+    if (window.location.pathname === '/') {
+      const selectElement = document.getElementById('page-select');
+      const selectedValue = selectElement.value;
+  
+      if (selectedValue) {
+        window.location.href = selectedValue;
+      }
+    }
+  }
+  
+
