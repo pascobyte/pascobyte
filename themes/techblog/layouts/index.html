@@ -1,9 +1,11 @@
 {{ define "main" }}
-<div class="hero is-fullheight home-bg">
+<div class="hero is-fullheight">
   <div class="hero-body">
     <div class="columns">
       <div class="column is-7">
-        <h1 class="title is-1 pb-2 is-capitalized">{{ .Site.Params.headline }}</h1>
+        <h1 class="title is-1 pb-2 is-capitalized">
+          {{ .Site.Params.headline }}
+        </h1>
         <p>{{ .Site.Params.intro }}</p>
         <hr />
         <div class="field is-grouped">
@@ -26,4 +28,5 @@
     </div>
   </div>
 </div>
+
 {{ end }}
