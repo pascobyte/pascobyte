@@ -7,6 +7,7 @@ thumbnail_alt: ""
 date: {{ .Date }}
 type: "post"
 schema: "article"
+sitemap_ignore: false
 keywords:
   - ChatGPT
   - AI
