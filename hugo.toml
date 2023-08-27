@@ -8,10 +8,10 @@ minifyOutput = true
 enableRobotsTXT = true
 
 [params]
-  tagline = "Explore the latest AI trends, news, and research"
-  headline = "The best place to learn about AI and technology"
-  intro = "Welcome to PascoByte, your one-stop shop for all things AI and technology. We are passionate about sharing the latest news, trends, and research in this exciting field."
-  description = "PascoByte: Stay up-to-date on technology and AI with informative and engaging content."
+  tagline = "Exploring Tech Frontiers"
+  headline = "Embarking on Tech Adventures"
+  intro = "Greetings, curious minds! Welcome to PascoByte, your compass in the realm of tech exploration. Here, we're all about diving deep into the ever-evolving world of technology. From AI wonders to emerging trends that light up the horizon, we're here to fuel your tech curiosity."
+  description = "Your hub for the latest in AI, emerging tech trends, and more. Join us in navigating the exciting world of technology at PascoByte."
   logo = "/images/pascobyte-logo.svg"
   bio = "/my-mission/"
   contact = "https://forms.gle/a6Qb3MYyLbNuFMDDA"
