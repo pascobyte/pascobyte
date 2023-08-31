@@ -12,7 +12,7 @@
       "name": "{{ .Site.Title }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ .Site.Params.logo }}",
+        "url": "{{ .Site.Params.logo | absURL }}",
         "width": "2048",
         "height": "2048"
       }
@@ -31,7 +31,7 @@
     "url": "{{ .Permalink }}",
     "name": "{{ .Site.Title }}",
     "description": "{{ .Site.Params.description }}",
-    "image": "{{ .Site.Params.logo }}",
+    "image": "{{ .Site.Params.logo | absURL }}",
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "mainEntity": {
       "@type": "WebPageElement",
@@ -81,7 +81,7 @@
             "@type": "Article",
             "name": "{{ $page.Title }}",
             "headline": "{{ $page.Title }}",
-            "image": "{{ $page.Params.thumbnail }}",
+            "image": "{{ $page.Params.thumbnail | absURL }}",
             "url": "{{ $page.Permalink }}",
             "description": "{{ $page.Description }}",
             "author": {
@@ -119,7 +119,7 @@
       "name": "{{ .Site.Title }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ .Site.Params.logo }}"
+        "url": "{{ .Site.Params.logo | absURL }}"
       }
     },
     "datePublished": "{{ .Date.Format "2006-01-02" }}",

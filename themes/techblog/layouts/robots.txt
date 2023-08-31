@@ -1,11 +1,5 @@
 User-agent: *
 Disallow:
-Disallow: /*.md$
-Disallow: /*.toml$
-Disallow: /*.yml$
-Disallow: /*.yaml$
-Disallow: /*.json$
-Disallow: /*.rss$
 
 User-agent: ia_archiver
 Disallow: /
