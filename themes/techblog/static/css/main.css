@@ -15,9 +15,45 @@
 }
 body {
   font-family: "Exo 2", sans-serif !important;
-  background: linear-gradient(to bottom, #0a192f, #090e1e);
-  background: -webkit-linear-gradient(top, #0a192f, #090e1e);
+  background: #0a192f;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 25, 47, 0.7),
+      rgba(10, 25, 47, 0.5)
+    ),
+    url("/images/ai-technology-landscape-wide.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: hsl(0, 0%, 96%) !important;
+  animation: moveBackground 30s infinite linear;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: center 0%;
+  }
+  50% {
+    background-position: center 100%;
+  }
+  100% {
+    background-position: center 0%;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .background {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(10, 25, 47, 0.7),
+        rgba(10, 25, 47, 0.5)
+      ),
+      url("/images/mobile-vertical-image-mobile.webp"); /* Change this to your vertical mobile image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
 }
 h1,
 h2,
