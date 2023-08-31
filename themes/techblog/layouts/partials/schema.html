@@ -12,7 +12,7 @@
       "name": "{{ .Site.Title }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ .Site.Params.logo | absURL }}",
+        "url": "{{ .Site.Params.logo }}",
         "width": "2048",
         "height": "2048"
       }
@@ -20,7 +20,9 @@
     "sameAs": [
       "{{ .Site.Params.twitter }}",
       "{{ .Site.Params.github }}",
-      "{{ .Site.Params.opensea }}"
+      "{{ .Site.Params.opensea }}",
+      "{{ .Site.Params.tiktok }}",
+      "{{ .Site.Params.youtube }}"
     ]
   }
 </script>
@@ -31,7 +33,7 @@
     "url": "{{ .Permalink }}",
     "name": "{{ .Site.Title }}",
     "description": "{{ .Site.Params.description }}",
-    "image": "{{ .Site.Params.logo | absURL }}",
+    "image": "{{ .Site.Params.logo }}",
     "datePublished": "{{ .Date.Format "2006-01-02" }}",
     "mainEntity": {
       "@type": "WebPageElement",
@@ -81,7 +83,7 @@
             "@type": "Article",
             "name": "{{ $page.Title }}",
             "headline": "{{ $page.Title }}",
-            "image": "{{ $page.Params.thumbnail | absURL }}",
+            "image": "{{ $page.Params.thumbnail }}",
             "url": "{{ $page.Permalink }}",
             "description": "{{ $page.Description }}",
             "author": {
@@ -119,7 +121,7 @@
       "name": "{{ .Site.Title }}",
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ .Site.Params.logo | absURL }}"
+        "url": "{{ .Site.Params.logo }}"
       }
     },
     "datePublished": "{{ .Date.Format "2006-01-02" }}",

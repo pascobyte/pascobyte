@@ -19,6 +19,8 @@ enableRobotsTXT = true
   twitterhandle = "@pascobyte"
   github = "https://github.com/pascobyte"
   opensea = "https://opensea.io/PascoByte"
+  tiktok = "https://www.tiktok.com/@pascobyte"
+  youtube = "https://www.youtube.com/channel/UCcPpjsmSJS9p3o9LbLgemaw"
 
 [permalinks]
   chatgpt = "/:filename/"
