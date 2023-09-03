@@ -90,34 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
     noscriptParentElement.appendChild(noscriptElement);
     noscriptElement.appendChild(imgElement);
   }
-  if (window.location.pathname === "/") {
-    const particleContainer = document.querySelector(".particle-container");
-    const numParticles = 50; // Adjust the number of particles
-    const particleSize = 2; // Adjust the particle size in rem
-    const containerWidth = particleContainer.offsetWidth;
-    const maxParticlesPerRow = Math.floor(containerWidth / (particleSize * 16)); // Convert rem to px
-    const colors = ["#51d4e6", "#ff6c00"]; // Cyberpunk-style colors
-
-    for (let i = 0; i < numParticles; i++) {
-      const particle = document.createElement("div");
-      particle.className = "particle";
-
-      const row = Math.floor(i / maxParticlesPerRow);
-      const col = i % maxParticlesPerRow;
-
-      particle.style.left = `calc(${col} * ${particleSize}rem)`;
-      particle.style.bottom = `calc(${row} * ${
-        (particleSize * Math.sqrt(3)) / 2
-      }rem)`; // Adjust vertical spacing for hexagons
-      particle.style.animationDelay = `${Math.random() * 2}s`; // Add some variation to animation start times
-
-      // Assign a random color from the 'colors' array
-      particle.style.backgroundColor =
-        colors[Math.floor(Math.random() * colors.length)];
-
-      particleContainer.appendChild(particle);
-    }
-  }
 });
 
 if ("serviceWorker" in navigator) {
