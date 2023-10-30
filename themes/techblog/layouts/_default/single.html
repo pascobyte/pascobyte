@@ -1,41 +1,5 @@
 {{ define "main" }}
 <article>
-  <header class="hero is-medium">
-    <div class="hero-body">
-      <div class="columns">
-        <div class="column is-half is-offset-one-quarter">
-          <figure class="image is-16by9 mb-6">
-            <img
-              src="{{ .Params.thumbnail }}"
-              alt="{{ .Params.thumbnail_alt }}"
-              width="643"
-              height="361"
-            />
-          </figure>
-          <h1 class="title ml-0 is-capitalized">{{ .Params.headline }}</h1>
-          <div>
-            <small
-              >Readtime:
-              <strong class="has-text-light"
-                >{{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end
-                }}</strong
-              ></small
-            >
-          </div>
-          {{ partial "breadcrumbs.html" . }} {{ if eq .Params.affiliate "true"
-          }}
-          <div class="notification is-success is-light mt-6">
-            <strong>Affiliate Disclaimer:</strong>
-            <p>
-              This page contains affiliate links, I get a small commission if
-              you purchase a product/service through this link.
-            </p>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </header>
   <div class="section">
     <div class="columns">
       <div class="column is-half is-offset-one-quarter">

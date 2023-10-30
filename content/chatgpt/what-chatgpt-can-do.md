@@ -98,6 +98,6 @@ Remember, as ChatGPT continues to evolve, its capabilities and understanding of 
 
 {{< disclaimer >}}
 
-## == Related Topics
+## Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}

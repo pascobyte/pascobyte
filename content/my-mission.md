@@ -5,7 +5,7 @@ description: "Learn about the mission of PascoByte, a technology and AI blog tha
 thumbnail: "/images/ai-laptop.webp"
 thumbnail_alt: "Drawing of laptop with brain and light bulb on screen"
 date: 2023-08-16T00:18:19+02:00
-type: "post"
+type: "page"
 schema: "article"
 keywords:
   - AI

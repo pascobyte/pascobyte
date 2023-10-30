@@ -62,6 +62,6 @@ So, next time ChatGPT decides to stop mid-conversation, embrace the unexpected, 
 
 {{< disclaimer >}}
 
-## == Related Topics
+## Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}

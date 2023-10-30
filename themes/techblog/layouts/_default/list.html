@@ -1,41 +1,35 @@
 {{ define "main" }}
-<article>
-    <header class="hero is-medium">
-        <div class="hero-body">
-            <div class="columns">
-                <div class="column is-three-fifths section">
-                    <h1 class="title pb-2 is-capitalized">{{ .Params.headline }}</h1>
-                    <h2 class="subtitle is-6">{{ .Description }}</h2>
-                    {{ partial "breadcrumbs.html" . }}
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <div class="container">
-        <div class="section">
-            <div class="row columns is-multiline">
-                {{ range .RegularPages.ByDate.Reverse }}
-                    <article class="column is-4">
-                        <div class="card large card-bg">
-                            <div class="card-image">
-                                <figure class="image is-16by9"><img src="{{ .Params.thumbnail | absURL }}"
-                                        alt="{{ .Params.thumbnail_alt }}" loading="lazy" decoding="async" width="400" height="225">
-                                </figure>
-                            </div>
-                            <div class="card-content">
-                                <div class="content">
-                                    <a href="{{ .Permalink }}">
-                                        <h3 class="title is-capitalized">{{ .Params.headline }}</h3>
-                                    </a>
-                                    <p class="has-text-light">{{ .Description }}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                {{ end }} 
+<div class="container">
+  <div class="section">
+    <div class="row columns is-multiline">
+      {{ range .RegularPages.ByDate.Reverse }}
+      <article class="column is-4">
+        <div class="card large card-bg">
+          <div class="card-image">
+            <figure class="image is-16by9">
+              <img
+                src="{{ .Params.thumbnail | absURL }}"
+                alt="{{ .Params.thumbnail_alt }}"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="225"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <a href="{{ .Permalink }}">
+                <h3 class="title is-capitalized">{{ .Params.headline }}</h3>
+              </a>
+              <p class="has-text-light">{{ .Description }}</p>
             </div>
+          </div>
         </div>
+      </article>
+      {{ end }}
     </div>
-</article>
+  </div>
+</div>
 {{ end }}

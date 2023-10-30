@@ -8,15 +8,13 @@ minifyOutput = true
 enableRobotsTXT = true
 
 [params]
-  tagline = "Exploring Tech Frontiers"
-  headline = "Embarking on Tech Adventures"
-  intro = "Greetings, curious minds! Welcome to PascoByte, your compass in the realm of tech exploration. Here, we're all about diving deep into the ever-evolving world of technology. From AI wonders to emerging trends that light up the horizon, we're here to fuel your tech curiosity."
-  description = "Your hub for the latest in AI, emerging tech trends, and more. Join us in navigating the exciting world of technology at PascoByte."
+  tagline = "Emerging Technologies and Technology Trends"
+  headline = "PascoByte: The Future of Technology is Now"
+  intro = "Explore the latest emerging technologies and technology trends with PascoByte, a technology website and blog. Learn about the latest innovations and how they are changing the world, from artificial intelligence to machine learning to robotics. PascoByte is your one-stop shop for all things technology."
+  description = "Stay up-to-date on the latest emerging technologies and technology trends with PascoByte, a technology website and blog. Learn about the latest innovations and how they are changing the world."
   logo = "/images/pascobyte-logo.svg"
   bio = "/my-mission/"
   contact = "https://forms.gle/a6Qb3MYyLbNuFMDDA"
-  twitter = "https://twitter.com/pascobyte"
-  twitterhandle = "@pascobyte"
   github = "https://github.com/pascobyte"
   opensea = "https://opensea.io/PascoByte"
   tiktok = "https://www.tiktok.com/@pascobyte"

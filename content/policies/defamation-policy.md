@@ -44,6 +44,6 @@ We will make our decision about how to address the complaint based on the follow
 
 If you have any questions about PascoByte's defamation policy, please contact me via the "Contact" link in the footer of this website.
 
-## == Related Topics
+## Related Topics
 
 {{< internal_links parentSection="policies" >}}

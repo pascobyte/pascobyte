@@ -24,7 +24,7 @@ Language translation – the magical elixir that turns "lost in translation" int
 
 ## How Accurate is ChatGPT?
 
-Let's dive right into the nitty-gritty, shall we? A crew of smart minds at Tencent AI Lab decided to play matchmaker between English and French using ChatGPT. The result? A **BLEU score of 24.73** and a **chrF++ score of 53.71** – the translation world's equivalent of nailing a high-five! It's like ChatGPT sat down, pulled out its linguistic poker face, and aced the bluff. But here's the kicker: *higher scores mean ChatGPT's translations are smoother than a fresh jar of peanut butter.*
+Let's dive right into the nitty-gritty, shall we? A crew of smart minds at Tencent AI Lab decided to play matchmaker between English and French using ChatGPT. The result? A **BLEU score of 24.73** and a **chrF++ score of 53.71** – the translation world's equivalent of nailing a high-five! It's like ChatGPT sat down, pulled out its linguistic poker face, and aced the bluff. But here's the kicker: _higher scores mean ChatGPT's translations are smoother than a fresh jar of peanut butter._
 
 ## Languages Supported by ChatGPT
 
@@ -52,6 +52,6 @@ In the grand finale, ChatGPT's translation feature waltzes onto the stage with e
 
 {{< disclaimer >}}
 
-## == Related Topics
+## Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}

@@ -25,6 +25,6 @@ keywords:
 
 {{< disclaimer >}}
 
-## == Related Topics
+## Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}
