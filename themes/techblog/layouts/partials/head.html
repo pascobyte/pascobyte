@@ -1,40 +1,37 @@
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="robots"
-    content="index, follow, noarchive, max-snippet:320, max-image-preview:large"
-  />
-  {{/*
-  <meta name="geo.region" content="NL" />
-  <meta name="geo.placename" content="Netherlands" />
-  <meta name="geo.position" content="52.1326° N;5.2913° E" />
-  <!-- Optional -->
-  <meta name="geo.region" content="NL" />
-  <!-- Optional -->
-  */}}
-  <link rel="stylesheet" href="/css/normalize.min.css" />
-  <link rel="stylesheet" href="/css/bul.min.css" />
-  <link rel="stylesheet" href="/css/main.css" />
+    content="index, follow, noarchive, max-snippet:320, max-image-preview:large">
+  <!--
+  <meta name="geo.region" content="NL">
+  <meta name="geo.placename" content="Netherlands">
+  <meta name="geo.position" content="52.1326° N;5.2913° E">
+  <meta name="geo.region" content="NL">
+  -->
+
+
+  <link rel="stylesheet" href="{{ .Site.Params.main_css | absURL }}">
+  <link rel="stylesheet" href="{{ .Site.Params.secondary_css | absURL }}">
+
   {{ if .IsHome }}
-  <title>{{ .Site.Title }} | {{ .Site.Params.tagline }}</title>
-  <meta name="description" content="{{ .Site.Params.description }}" />
-  {{ end }} {{ if eq .Params.type "list"}}
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Description }}" />
-  {{ end }} {{ if eq .Params.type "policy"}}
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Description }}" />
-  {{ end }} {{ if eq .Params.type "post" }}
-  <title>{{ .Title }}</title>
-  <meta name="description" content="{{ .Description }}" />
-  {{ end }} {{ if eq .Params.type "page" }}
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta name="description" content="{{ .Description }}" />
+  
+    <title>{{ .Site.Title }}: {{ .Site.Params.tagline }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+
+    {{ else if eq .Params.type "post" }}
+    <title>{{ .Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+    {{ else }}
+    <title>{{ .Title }} &#45; {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Description }}">
+
   {{ end }}
-  <link rel="canonical" href="{{ .Permalink }}" />
-  {{ partial "icons.html" . }} {{ partial "social.html" . }} {{ partial
-  "schema.html" . }} {{ with .OutputFormats.Get "rss" -}} {{ printf `
-  <link rel="%s" type="%s" href="%s" title="%s" />
-  ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}}
+
+  
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ partial "icons.html" . }} 
+  {{ partial "social.html" . }} 
+  {{ partial "schema.html" . }}
 </head>

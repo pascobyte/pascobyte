@@ -1,23 +1,11 @@
 ---
 title: "ChatGPT: A Comprehensive Guide"
-headline: "What is ChatGPT?"
 description: "Learn about ChatGPT, AI chatbot developed by OpenAI. This blog post will cover what ChatGPT is, how it works, what it can do, and how to use it."
-thumbnail: "/images/blog/what-is-chatgpt.webp"
-thumbnail_alt: "Robot having a conversation with a person on a green background. The robot is saying 'снат-тastic CONVERSATIONS!'"
+thumbnail: "/images/blog/ai-chatbot.webp"
+thumbnail_alt: "ChatGT chat bot workin on automations"
 date: 2023-08-18T20:51:54+02:00
+mod_date: 2023-08-18T20:51:54+02:00
 type: "post"
-schema: "article"
-keywords:
-  - ChatGPT
-  - Conversational AI
-  - GPT-3.5 architecture
-  - Neural networks
-  - Natural language processing
-  - AI applications
-  - Language patterns
-  - AI ethics
-  - OpenAI technology
-  - Future of AI
 ---
 
 In today's rapidly evolving technological landscape, the emergence of AI-powered language models has ushered in a new era of human-computer interaction.
@@ -98,10 +86,9 @@ Whether you're a content creator, a curious learner, or an enthusiast of technol
 
 So, go ahead, engage with ChatGPT, and experience the marvel of AI-powered conversations. It's not just a tool; it's a collaborator, a companion, and a testament to the boundless potential of human innovation intersecting with artificial intelligence.
 
----
 
-{{< disclaimer >}}
 
+***
 ## Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}

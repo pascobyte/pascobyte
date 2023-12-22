@@ -1,82 +1,38 @@
-{{ partial "gdpr" . }} {{ if .IsHome }}
-<div class="hero is-fullheight home-bg">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-6">
-        <h1 class="title is-1 pb-2 is-capitalized">
-          {{ .Site.Params.headline }}
-        </h1>
-        <p>{{ .Site.Params.intro }}</p>
-        <hr />
-        <div class="field is-grouped">
-          <div class="control is-expanded">
-            <div class="select is-fullwidth">
-              <label for="page-select" class="is-sr-only">Pick a topic:</label>
-              <select class="card-bg" id="page-select">
-                <option disabled selected value="">Pick a topic</option>
-                <option value="{{ "/chatgpt/" | absURL }}">ChatGPT</option>
-                <option value="{{ "/policies/" | absURL }}">Policies</option>
-              </select>
+{{ partial "navbar.html" . }}
+
+{{ if .IsHome }}
+  
+ <!-- homne Header-->
+<div class="hero">
+    <div class="hero-body">
+        <div class="columns is-vcentered">
+            <div class="column is-three-fifths">
+                <h2 class="title is-1 has-text-weight-bold">Solving Problems, <br />Simply Coded</h2>
+                <p>Welcome to PascoByte, where simplicity meets purpose in every line of code. Explore streamlined solutions that tackle problems with elegance and efficiency. Let's simplify the complex together.</p>
+                <div class="buttons">
+                    <a href="#geekrealms" class="button is-info">Pick a Geek Realm</a>
+                </div>
+            </div>
+            <div class="column">
+                <figure class="image is-4by5">
+                    <img src="{{"/images/pascobyte-cute-gaming-bot.webp" | absURL }}" alt="PascoByte's cute gaming bot" width="344" height="510">
+                </figure>
             </div>
           </div>
-          <div class="control">
-            <button class="button is-success" onclick="goToSelectedPage()">
-              Go!
-            </button>
+    </div>
+</div>
+
+{{ else }}
+ <!-- page Header-->
+<section class="hero is-medium">
+    <div class="hero-body">
+        <div class="columns is-vcentered">
+            <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
+                <h1 class="title is-1">{{ .Title }}</h1>
+                <p>{{ .Description | truncate 150 }}</p>
+            </div>
           </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 
-{{ else if ( eq .Params.type "list" ) }} {{ partial "navbar.html" . }}
-<div class="hero is-medium">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-three-fifths section">
-        <h1 class="title pb-2 is-capitalized">{{ .Params.headline }}</h1>
-        <h2 class="subtitle is-6">{{ .Description }}</h2>
-        {{ partial "breadcrumbs.html" . }}
-      </div>
-    </div>
-  </div>
-</div>
-
-{{ else if ( eq .Params.type "post" ) }} {{ partial "navbar.html" . }}
-<div class="hero is-medium">
-  <div class="hero-body">
-    <div class="columns">
-      <div class="column is-half is-offset-one-quarter">
-        <figure class="image is-16by9 mb-6">
-          <img
-            src="{{ .Params.thumbnail }}"
-            alt="{{ .Params.thumbnail_alt }}"
-            width="643"
-            height="361"
-          />
-        </figure>
-        <h1 class="title ml-0 is-capitalized">{{ .Params.headline }}</h1>
-        <div>
-          <small
-            >Readtime:
-            <strong class="has-text-light"
-              >{{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end
-              }}</strong
-            ></small
-          >
-        </div>
-        {{ partial "breadcrumbs.html" . }} {{ if eq .Params.affiliate "true" }}
-        <div class="notification is-success is-light mt-6">
-          <strong>Affiliate Disclaimer:</strong>
-          <p>
-            This page contains affiliate links, I get a small commission if you
-            purchase a product/service through this link.
-          </p>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</div>
 {{ end }}

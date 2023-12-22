@@ -1,23 +1,11 @@
 ---
 title: "AI Shields from Online Extremes"
-headline: "Online Extremes: Let AI Save Your Sanity"
 description: "Fed up with online extremists? Discover how AI can spare you drama, harassment & absurdity. Embrace the cold, logical alternative."
-thumbnail: "/images/blog/online-extremes-ai-rescue.webp"
-thumbnail_alt: "drama faces icon on green background"
+thumbnail: "/images/blog/ai-harful-content-alert-smartphone.webp"
+thumbnail_alt: "AI harful content alert on smartphone"
 date: 2023-08-21T18:56:07+02:00
+mod_date: 2023-08-16T16:37:25+02:00
 type: "post"
-schema: "article"
-keywords:
-  - Online Extremes
-  - AI Conversations
-  - Internet Drama
-  - Political Polarization
-  - Toxic Online Interactions
-  - ChatGPT
-  - Safer Online Discussions
-  - Neutrality of AI
-  - Productive Discourse
-  - Emotional Toll
 ---
 
 Welcome to the digital circus, where every click is a leap into the lion's den of online conversations. It's a realm where people don't just hold opinions, they cradle them like sacred relics. Brace yourself for a reality check: the internet, for all its wonders, is also the breeding ground for extreme opinions that can make your head spin faster than a YouTube conspiracy theory video.
@@ -48,12 +36,12 @@ Before you send AI a knock-knock joke expecting a laugh, remember that it's abou
 
 Let's face it: humans are wired to be passionate, opinionated creatures. But somewhere along the line, the internet turned us into opinion-spewing monsters who'd rather sacrifice courtesy for a chance to be heard. It's an online jungle where it's kill or be killed in the land of opinions. Yet, before you throw yourself into this chaotic mess, consider letting AI be your shield. It might not have your back in an emotional sense, but it's a powerful tool for escaping the maelstrom of online extremism.
 
-## Conclusion
+## Summary
 
 In a world where online debates have become a digital equivalent of Gladiator fights, AI offers a glimpse of respite. It's like a conversation parachute, allowing you to gracefully descend into discussions without the baggage of personal attacks and irrational fanaticism. As you dive into the tumultuous sea of virtual arguments, know that an AI lifebuoy is waiting to keep you afloat, away from the extremes that often drown the essence of productive conversation. So go on, let AI be your conversation comrade – after all, you deserve a drama-free exchange, even if it's devoid of the occasional witty retort or sly grin.
 
-{{< disclaimer >}}
 
+***
 ## Related Topics
 
 {{< internal_links parentSection="chatgpt" >}}

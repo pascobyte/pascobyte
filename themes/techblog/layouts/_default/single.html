@@ -1,17 +1,23 @@
 {{ define "main" }}
-<article>
-  <div class="section">
-    <div class="columns">
-      <div class="column is-half is-offset-one-quarter">
-        <div class="notification card-bg">
-          <details>
-            <summary>Table of Contents:</summary>
-            <div class="my-3 content">{{ .TableOfContents }}</div>
-          </details>
+<!-- Page Content-->
+<article class="columns mb-6">
+    <div class="column is-three-fifths is-offset-one-fifth">
+        <figure class="image is-16by9">
+            <img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Params.thumbnail_alt }}" width="618" height="383" loading="lazy" decoding="async">
+          </figure>
+          <div class="floating-button">
+            <button class="button is-info is-light" id="speakcontent">Read Page</button>
         </div>
-        <div class="content" id="single-content">{{ .Content }}</div>
-      </div>
+          <details class="notification is-info is-light py-5 my-6" aria-label="table of contents">
+            <summary>Table of Contents</summary>
+            {{ .TableOfContents }}
+          </details>
+        <div id="single-content">
+            {{ .Content}}
+        </div>
+        {{ if eq .Params.type "post" }}
+        {{ partial "disclaimer.html" . }}
+        {{ end }}
     </div>
-  </div>
 </article>
 {{ end }}

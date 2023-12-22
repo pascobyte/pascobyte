@@ -1,1 +1,99 @@
-{{ define "main" }} {{ end }}
+{{ define "main" }} 
+ <!-- geek realms-->
+
+ <section class="section is-medium" id="geekrealms">
+    <div class="container">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <h2 class="title is-2" id="techrealms">Geeky Realms</h2>
+            </div>
+            <div class="column is-12">
+                <div class="columns is-multiline">
+                    <section class="column is-6">
+                        <div class="box has-background-info-light">
+                            <a href="/ai/">
+                                <h3 class="title is-5">Artificial Intelligence</h3>
+                            </a>
+                            <p>Ready Player Fun 🎮! Join me in the Game Zone, where I share my simple gaming creations and maybe a few digital mishaps.</p>
+                        </div>
+                    </section>
+                    <section class="column is-6">
+                        <div class="box has-background-info-light">
+                            <a href="/swe/">
+                                <h3 class="title is-5">Software Development</h3>
+                            </a>
+                            <p>Code & Coffee ☕! I break down tech barriers one line at a time. Great for nooby coders. Spoiler alert: Bugs may be harmed during the process!</p>
+                        </div>
+                    </section>
+                    <section class="column is-6">
+                        <div class="box has-background-info-light">
+                            <a href="/iot/">
+                                <h3 class="title is-5">Internet of Things (IoT)</h3>
+                            </a>
+                            <p>Nerd Alert 🤓! I spill the beans from AI to the quirkiest gadgets, I'll chat about all things tech. Grab your virtual popcorn; the tales are about to unfold!</p>
+                        </div>
+                    </section>
+                    <section class="column is-6">
+                        <a href="/cyber-sec/" class="box has-background-info-light">
+                            <h3 class="title is-5">Cybersecurity</h3>
+                            <p>Where I guide you to the coolest productivity boosters to downright quirky Apps 📱, let's app-solutely discover them all!</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ 
+<div class="section my-6 has-background-light">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-three-quarters">
+                <div class="has-text-centered">
+                    <p class="is-italic">
+                        &OpenCurlyDoubleQuote; Feeling stuck or down in the code trenches? Remember, even the best programs started with a 'Hello World.' Embrace the bugs as stepping stones to mastery. &CloseCurlyDoubleQuote;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- latest posts -->
+<section class="section is-medium my-5">
+    <div class="container is-vcentered px-5 my-5">
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+                <div class="has-text-centered">
+                    <h2 class="title is-2">Latest Tech Tales</h2>
+                    <p class="subtitle is-5 has-text-grey py-3">Where bytes unfold in the latest tech stories. From AI wonders to gadget mysteries, we're decoding the secrets of Silicon Valley. 🚀🕵️‍♂️ #TechTalks</p>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-multiline mt-6">
+            {{ $latestPosts := where .Site.RegularPages.ByDate.Reverse "Type" "post" | first 3 }}
+            {{ range $latestPosts }}
+            <a href="{{ .Permalink }}" class="column is-one-third">
+              <article class="card">
+                <div class="card-image">
+                  <figure class="image is-19by9">
+                    <img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Params.thumbnail_alt }}" width="240" height="135" loading="lazy" decoding="async">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <h3 class="title is-5 has-text-weight-bold">{{ .Title }}</h3>
+                  <p class="subtitle is-6 pt-3">{{ .Description | truncate 150 }}.</p>
+                </div>
+              </article>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+
+{{ end }}
+
+

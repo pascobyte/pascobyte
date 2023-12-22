@@ -1,35 +1,69 @@
 {{ define "main" }}
+<!-- filter articles -->
+<div class="section">
+  <div class="container box">
+    <div class="field has-text-centered">
+      <label class="label">Filter Results</label>
+      <div class="control">
+        <!-- Add an input box for filtering above the list -->
+        <input class="input" type="text" id="articleFilter" placeholder="Type to filter results">
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="container">
+<div class="container mb-6">
   <div class="section">
-    <div class="row columns is-multiline">
+    <div class="columns is-multiline">
       {{ range .RegularPages.ByDate.Reverse }}
-      <article class="column is-4">
-        <div class="card large card-bg">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <img
-                src="{{ .Params.thumbnail | absURL }}"
-                alt="{{ .Params.thumbnail_alt }}"
-                loading="lazy"
-                decoding="async"
-                width="400"
-                height="225"
-              />
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="content">
-              <a href="{{ .Permalink }}">
-                <h3 class="title is-capitalized">{{ .Params.headline }}</h3>
-              </a>
-              <p class="has-text-light">{{ .Description }}</p>
+      <a href="{{ .Permalink }}" class="column is-4">
+        <article>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-16by9">
+                <img
+                  src="{{ .Params.thumbnail | absURL }}"
+                  alt="{{ .Params.thumbnail_alt }}"
+                  loading="lazy"
+                  decoding="async"
+                  width="272"
+                  height="189"
+                />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                  <h3 class="title is-capitalized">{{ .Title  }}</h3>
+                <p class="has-text-grey">{{ .Summary | truncate 150 }}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </a>
       {{ end }}
     </div>
   </div>
 </div>
+
+<script>
+  // JavaScript function to filter articles based on user input
+  document.getElementById("articleFilter").addEventListener("input", function () {
+    var filterValue = this.value.toLowerCase();
+    var articles = document.getElementsByClassName("column is-4");
+
+    for (var i = 0; i < articles.length; i++) {
+      var article = articles[i];
+      var title = article.querySelector(".title").innerText.toLowerCase();
+      var summary = article.querySelector(".has-text-grey").innerText.toLowerCase();
+
+      // Show/hide the article based on the filter
+      if (title.includes(filterValue) || summary.includes(filterValue)) {
+        article.style.display = "";
+      } else {
+        article.style.display = "none";
+      }
+    }
+  });
+</script>
+
 {{ end }}

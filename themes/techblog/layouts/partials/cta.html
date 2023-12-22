@@ -1,0 +1,53 @@
+<!-- Call to action-->
+<aside class="section is-medium cta-bg mt-6">
+  <div class="columns is-vcentered has-text-centered">
+    <div class="column is-three-fifths is-offset-one-fifth">
+      <span class="title is-2 has-text-white is-block">Santa's Arrival Countdown</span>
+      <p class="subtitle has-text-light pt-3">Join us in the magical countdown to Santa's grand arrival! Can't wait for Santa or having trouble remembering the date? Here's the enchanting time before Santa comes to town. Get ready for joy, laughter, and the warmth of the holiday season!.</p>
+
+      <div id="countdown"></div>
+    </div>
+  </div>
+</aside>
+
+
+<script>
+    // Function to calculate the time remaining until Christmas
+    function getTimeRemaining() {
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      const christmasDate = new Date(currentYear, 11, 25); // Month is 0-indexed, so 11 is December
+      const timeRemaining = christmasDate - now;
+  
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+      return {
+        days,
+        hours,
+        minutes,
+        seconds
+      };
+    }
+  
+    // Function to update the countdown display
+    function updateCountdown() {
+      const countdownElement = document.getElementById('countdown');
+      const { days, hours, minutes, seconds } = getTimeRemaining();
+  
+      // Display the countdown
+      countdownElement.innerHTML = `
+        <p class="has-text-light is-size-4">${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds</p>
+      `;
+    }
+  
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+  
+    // Initial update
+    updateCountdown();
+  </script>
+  

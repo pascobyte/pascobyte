@@ -2,7 +2,7 @@
 {{ $parentSection := .Page.Site.GetPage "section" $parentSectionID }}
 {{ $pages := where .Site.RegularPages "Section" $parentSectionID }}
 <aside>
-  <nav aria-label="Gerelateerde onderwerpen">
+  <nav aria-label="Related Topics">
     <ul>
       <li><a href="{{ $parentSection.Permalink }}">{{ $parentSection.Title }}</a></li>
       {{ range $pages }}

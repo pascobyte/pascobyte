@@ -1,45 +1,45 @@
 {{ if eq .Type "post" }}
 <!-- Article Type for Post Pages -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:description" content="{{ .Description }}" />
-<meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.twitterhandle }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Description }}">
+<meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitterhandle }}">
 
-<meta property="og:type" content="article" />
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ .Description }}" />
-<meta property="og:image" content="{{ .Params.thumbnail | absURL }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
 
 {{ else if eq .Type "list" }}
 <!-- Website Type for List Pages -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:description" content="{{ .Description }}" />
-<meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.twitterhandle }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Description }}">
+<meta name="twitter:image" content="{{ .Params.thumbnail | absURL }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitterhandle }}">
 
-<meta property="og:type" content="website" />
-<meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ .Description }}" />
-<meta property="og:image" content="{{ .Params.thumbnail | absURL }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:image" content="{{ .Params.thumbnail | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
 
 {{ else if .IsHome }}
 <!-- Website Type for Home Page -->
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="summary_large_image">
 <meta
   name="twitter:title"
   content="{{ .Site.Title }} | {{ .Site.Params.tagline }}"
 />
-<meta name="twitter:description" content="{{ .Site.Params.description }}" />
-<meta name="twitter:image" content="{{ .Site.Params.logo | absURL }}" />
-<meta name="twitter:creator" content="{{ .Site.Params.twitterhandle }}" />
+<meta name="twitter:description" content="{{ .Site.Params.description }}">
+<meta name="twitter:image" content="{{ .Site.Params.logo | absURL }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitterhandle }}">
 
-<meta property="og:type" content="website" />
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Params.tagline }}" />
-<meta property="og:description" content="{{ .Site.Params.description }}" />
-<meta property="og:image" content="{{ .Site.Params.logo | absURL }}" />
-<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Params.tagline }}">
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:image" content="{{ .Site.Params.logo | absURL }}">
+<meta property="og:url" content="{{ .Permalink }}">
 {{ end }}

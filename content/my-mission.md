@@ -1,23 +1,11 @@
 ---
 title: "My Mission"
-headline: "My Mission"
 description: "Learn about the mission of PascoByte, a technology and AI blog that provides informative and engaging content to help readers stay up-to-date in this industry."
 thumbnail: "/images/ai-laptop.webp"
 thumbnail_alt: "Drawing of laptop with brain and light bulb on screen"
 date: 2023-08-16T00:18:19+02:00
+mod_date: 2023-12-22T21:18:05+02:00
 type: "page"
-schema: "article"
-keywords:
-  - AI
-  - tech
-  - innovation
-  - exploration
-  - creativity
-  - ChatGPT
-  - NFT generators
-  - art generators
-  - technology
-  - digital
 ---
 
 Hey there, fellow seekers of tech wisdom! 👋

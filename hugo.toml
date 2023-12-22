@@ -4,15 +4,19 @@ title = 'PascoByte'
 theme = 'techblog'
 disableKinds = ["taxonomy", "term"]
 disableHugoGeneratorInject = true
-minifyOutput = true
+minifyOutput = false
 enableRobotsTXT = true
 
 [params]
-  tagline = "Emerging Technologies and Technology Trends"
-  headline = "PascoByte: The Future of Technology is Now"
-  intro = "Explore the latest emerging technologies and technology trends with PascoByte, a technology website and blog. Learn about the latest innovations and how they are changing the world, from artificial intelligence to machine learning to robotics. PascoByte is your one-stop shop for all things technology."
-  description = "Stay up-to-date on the latest emerging technologies and technology trends with PascoByte, a technology website and blog. Learn about the latest innovations and how they are changing the world."
+  tagline = "Simplicity Meets Purpose"
+  description = "Welcome to PascoByte, where simplicity meets purpose in every line of code. Explore streamlined solutions that tackle problems with elegance and efficiency."
   logo = "/images/pascobyte-logo.svg"
+  
+  main_css = "/css/bul.min.css"
+  secondary_css = "/css/main.css"
+  main_js = "/js/main.js"
+  single_page_js = "/js/single.js"
+
   bio = "/my-mission/"
   contact = "https://forms.gle/a6Qb3MYyLbNuFMDDA"
   github = "https://github.com/pascobyte"

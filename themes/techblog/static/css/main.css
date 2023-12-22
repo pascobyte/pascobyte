@@ -1,118 +1,36 @@
-body {
-  background: #0a192f;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(10, 25, 47, 0.7),
-    rgba(10, 25, 47, 0.5)
-  );
-  color: hsl(0, 0%, 96%) !important;
+.navbar-brand{
+    align-items: center !important;
+}
+.navbar-item img{
+    max-height: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: hsl(0, 0%, 100%) !important;
-}
-/* For modern browsers */
-::-webkit-scrollbar {
-  width: 0; /* Adjust the width as needed */
+.cta-bg{
+    background: linear-gradient(rgba(0, 0, 0, .54), rgba(0, 0, 0, .74)), url('/images/pascobyte-tech-christmas.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-::-webkit-scrollbar-track {
-  background: transparent; /* Set the track background color */
+
+#single-content p{
+    margin-bottom: calc(1.5rem) !important;
+}
+#single-content h2{
+    font-weight: bolder !important;
+    margin-top: calc(3rem) !important;
+    margin-bottom: calc(1.5rem) !important;
+}
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
 }
 
-::-webkit-scrollbar-thumb {
-  background: transparent; /* Set the thumb background color */
-}
 
-/* For Firefox */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-}
-.home-bg {
-  background-image: linear-gradient(
-      rgba(10, 25, 47, 0.7),
-      rgba(10, 25, 47, 0.5)
-    ),
-    url("/images/robot-hand-holding-holographic-globe.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.is-success {
-  background-color: #c9df34 !important;
-  color: #000000 !important;
-  transition: all ease-in-out 360ms;
-}
-.is-success:hover {
-  background-color: #a5bf23 !important;
-}
-.button {
-  transition: all ease-in-out 360ms;
-}
-.button:hover {
-  transform: scale(0.9);
-}
-.navbar,
-.navbar-menu {
-  background-color: transparent !important;
-}
-.navbar-menu a:hover,
-.footer-links a:hover {
-  background: none !important;
-  color: #c9df34 !important;
-}
-.branding {
-  color: #c9df34 !important;
-  font-weight: bold;
-}
-.card-bg {
-  background-color: #1f2937 !important;
-  color: hsl(0, 0%, 96%) !important;
-}
-.card-bg h3 {
-  color: #c9df34 !important;
-}
-#single-content a {
-  color: #c9df34 !important;
-  font-weight: bold;
-}
-#single-content h2 {
-  color: #c9df34 !important;
-  padding-top: calc(4rem) !important;
-}
-
-#single-content strong {
-  color: #c9df34 !important;
-  font-weight: bolder;
-}
-#TableOfContents ul li a {
-  color: #c9df34 !important;
-  text-decoration: none;
-}
-::marker {
-  color: #c9df34 !important;
-}
-
-.gdpr-banner {
-  display: flex;
-  flex-direction: column;
-  position: fixed !important;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  height: auto;
-  width: fit-content;
-  border-radius: calc(0.6rem);
-  border: 1px solid #c9df34;
-}
-
-.content table thead td,
-.content table thead th {
-  color: hsl(0, 0%, 96%) !important;
+.main-footer{
+    ul{
+        list-style: none !important;
+    }
 }
