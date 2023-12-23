@@ -3,8 +3,8 @@ title: "ChatGPT: A Comprehensive Guide"
 description: "Learn about ChatGPT, AI chatbot developed by OpenAI. This blog post will cover what ChatGPT is, how it works, what it can do, and how to use it."
 thumbnail: "/images/blog/ai-chatbot.webp"
 thumbnail_alt: "ChatGT chat bot workin on automations"
-date: 2023-08-18T20:51:54+02:00
-mod_date: 2023-08-18T20:51:54+02:00
+date: 2023-08-18T20:51:54+01:00
+mod_date: 2023-08-18T20:51:54+01:00
 type: "post"
 ---
 

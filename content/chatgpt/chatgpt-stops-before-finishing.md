@@ -3,8 +3,8 @@ title: "ChatGPT Stops Before Finishing"
 description: "ChatGPT Stops Before Finishing: The Hilarious and Unexpected Moments When AI Chatbots Leave Us Hanging"
 thumbnail: "/images/blog/ai-chatbot.webp"
 thumbnail_alt: "ChatGPT looking stoped working on automation"
-date: 2023-08-18T20:51:54+02:00
-mod_date: 2023-08-18T20:51:54+02:00
+date: 2023-08-18T20:51:54+01:00
+mod_date: 2023-08-18T20:51:54+01:00
 type: "post"
 ---
 

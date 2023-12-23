@@ -3,8 +3,8 @@ title: "Practical Guide to Learning with ChatGPT"
 description: "Explore the practical magic of ChatGPT—coding tips, language learning, and more! Your go-to guide for learning is here. Ready to dive in? 🚀 #ChatGPT"
 thumbnail: "/images/blog/ai-chatbot.webp"
 thumbnail_alt: "ChatGPT AI Bot helping completing tasks for you"
-date: 2023-08-18T20:51:54+02:00
-mod_date: 2023-12-16T14:13:14+02:00
+date: 2023-08-18T20:51:54+01:00
+mod_date: 2023-12-16T14:13:14+01:00
 type: "post"
 ---
 Hey, let's dive into the practical side of ChatGPT—a tool that's not just popular but incredibly handy for learning. No fluff here, just a down-to-earth guide on how ChatGPT can become your practical companion on the quest for knowledge.

@@ -3,8 +3,8 @@ title: "ChatGPT: Your Digital Shrink [Using Custom Instructions]"
 description: "Ever thought of ChatGPT as your digital shrink? Dive into my blog to explore real-life examples. Try it out for free! Let's make your conversation unique and personal."
 thumbnail: "/images/blog/ai-doctor.webp"
 thumbnail_alt: "ChatGPT AI chat bot working as a Shrink"
-date: 2023-08-18T20:51:54+02:00
-mod_date: 2023-12-16T00:30:49+02:00
+date: 2023-08-18T20:51:54+01:00
+mod_date: 2023-12-16T00:30:49+01:00
 type: "post"
 ---
 In our ever-evolving digital landscape, AI has found its way into various aspects of our lives. Today, let's explore a fascinating concept: turning ChatGPT into your personal digital shrink. This unconventional use of technology opens up new possibilities for meaningful conversations and support. We'll discuss how to make it work, covering custom instructions, setting the tone, addressing personal topics, potential benefits, considerations, tech integration, and user experiences.

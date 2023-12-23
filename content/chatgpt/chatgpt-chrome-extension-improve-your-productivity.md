@@ -3,8 +3,8 @@ title: "ChatGPT Chrome Extensions: A Comprehensive Guide"
 description: "ChatGPT Chrome extensions can help you summarize articles, generate creative content, translate languages, and chat with AI. Learn how to use a ChatGPT Chrome extension to boost your productivity and creativity in this comprehensive guide."
 thumbnail: ""
 thumbnail_alt: ""
-date: 2023-12-16T16:40:06+02:00
-mod_date: 2023-12-16T16:40:06+02:00
+date: 2023-12-16T16:40:06+01:00
+mod_date: 2023-12-16T16:40:06+01:00
 type: "post"
 draft: true
 ---

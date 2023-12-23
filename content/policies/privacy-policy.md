@@ -3,8 +3,8 @@ title: "Privacy Policy"
 description: "Discover our commitment to data privacy & transparency. Learn how we collect info, secure it, and manage cookies. Opt-in for engaging analytics. Visit now!"
 thumbnail: "/images/data-lines.webp"
 thumbnail_alt: "Abstract illutration of data lines on the internet"
-date: 2023-07-20T12:34:13+02:00
-mod_date: 2023-12-20T20:23:07+02:00
+date: 2023-07-20T12:34:13+01:00
+mod_date: 2023-12-20T20:23:07+01:00
 type: "page" #post, list, page, softwarelist, software
 ---
 

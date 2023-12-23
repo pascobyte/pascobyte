@@ -3,8 +3,8 @@ title: "ChatGPT Detectors: Guide for Hiring freelance Writers"
 description: "Ready to hire a freelancer? Mind the AI! Explore online detectors for transparent hiring—get quality work for your investment. 🌐💼 #FreelanceTips"
 thumbnail: "/images/blog/freelance-writer-setup.webp"
 thumbnail_alt: "Cozy freelance writer setup"
-date: 2023-10-30T20:42:20+02:00
-mod_date: 2023-12-16T14:16:00+02:00
+date: 2023-10-30T20:42:20+01:00
+mod_date: 2023-12-16T14:16:00+01:00
 type: "post"
 ---
 In a digital landscape where content is king, ensuring the authenticity of human-generated material is paramount. This guide dives into the world of online detectors, shedding light on their crucial role in the hiring process for freelance writers.

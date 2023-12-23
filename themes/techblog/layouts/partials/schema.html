@@ -6,27 +6,11 @@
     "name": "{{ .Site.Title }}",
     "url": "{{ .Permalink }}",
     "image": "{{ .Site.Params.logo | absURL }}",
-    "mainEntity": [
-      {
-        "@type": "ItemList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Artificial Intelligence", "url": "https://pascobyte.blog/ai/"},
-          {"@type": "ListItem", "position": 2, "name": "Software Development", "url": "https://pascobyte.blog/swe/"},
-          {"@type": "ListItem", "position": 3, "name": "Internet of Things (IoT)", "url": "https://pascobyte.blog/iot/"},
-          {"@type": "ListItem", "position": 4, "name": "Cybersecurity", "url": "https://pascobyte.blog/cyber-sec/"}
-        ]
-      },
-      {
-        "@type": "CreativeWork",
-        "text": "Feeling stuck or down in the code trenches? Remember, even the best programs started with a 'Hello World.' Embrace the bugs as stepping stones to mastery.",
-        "author": "{{ .Site.Title }}",
-        "datePublished": "{{ .Date.Format "2006-01-02" }}"
-      },
       {
         "@type": "ItemList",
         "name": "Latest Tech Tales",
         "itemListElement": [
-          {{- $posts := where .Site.RegularPages.ByDate.Reverse "Type" "post" | first 3 }}
+          {{- $posts := where .Site.RegularPages.ByDate.Reverse "Type" "post" | first 6 }}
           {{- range $index, $page := $posts -}}
           {
             "@type": "ListItem",
@@ -50,7 +34,6 @@
           {{- end -}}
         ]
       }
-    ]
   }
   </script>
 
@@ -240,8 +223,8 @@
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "Santa's Arrival Countdown",
-    "startDate": "2023-12-17T16:52+02:00",
-    "endDate": "2023-12-24T00:00+02:00",
+    "startDate": "2023-12-17T16:52+01:00",
+    "endDate": "2023-12-24T00:00+01:00",
     "description": "Join us in the magical countdown to Santa's grand arrival! Can't wait for Santa or having trouble remembering the date? Here's the enchanting time before Santa comes to town. Get ready for joy, laughter, and the warmth of the holiday season!",
     "location": {
       "@type": "Place",
@@ -265,7 +248,7 @@
       "price": "0.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "validFrom": "2023-12-17T16:52+02:00",
+      "validFrom": "2023-12-17T16:52+01:00",
       "url": "{{ .Site.BaseURL }}"
     }
   }

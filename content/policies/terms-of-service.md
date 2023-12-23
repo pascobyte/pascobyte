@@ -3,8 +3,8 @@ title: "Terms Of Service"
 description: "This page contains the terms and conditions that apply to the use of our website. By visiting and using pascobyte.blog, you agree to these terms."
 thumbnail: "/images/tos-illustration.webp"
 thumbnail_alt: "tech style illustration of TOS"
-date: 2023-07-20T11:34:13+02:00
-mod_date: 2023-12-20T19:58:44+02:00
+date: 2023-07-20T11:34:13+01:00
+mod_date: 2023-12-20T19:58:44+01:00
 type: "page" #post, list, page, softwarelist, software
 ---
 
