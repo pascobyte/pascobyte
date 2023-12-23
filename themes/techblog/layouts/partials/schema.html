@@ -165,15 +165,16 @@
     "@context": "https://schema.org/",
     "@type": "WebPage",
     "name": "{{ .Title }}",
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "xPath": [
-        "/html/body/header/section/div/div/div/h1",
-        "//*[@id="content"]"
-      ]
-    },
+    "speakable":
+    {
+     "@type": "SpeakableSpecification",
+     "xPath": [
+       "/html/body/header/div/div/div/div/h1",
+       "/html/body/main/article/div/div[2]"
+       ]
+     },
     "url": "{{ .Permalink }}"
-  }
+    }
   
 </script>
 
