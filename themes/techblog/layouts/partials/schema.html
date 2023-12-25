@@ -44,7 +44,7 @@
     ]
   }
 </script>
-{{ end }} {{ if eq .Params.type "policylist" }}
+{{ end }} {{ if eq .Params.type "pagelist" }}
 
 <script type="application/ld+json">
   {
@@ -61,23 +61,10 @@
           "@type": "ListItem",
           "position": {{ $index | add 1 }},
           "item": {
-            "@type": "WebPage",
+            "@type": "Article",
             "name": "{{ $page.Title }}",
             "headline": "{{ $page.Title }}",
-            "image": [
-              {{- if $length }},
-              {
-                "@type": "ImageObject",
-                "url": "{{ $page.Params.thumbnail }}",
-                "height": {{ $page.Params.image_height }},
-                "width": {{ $page.Params.image_width }}
-              },
-              {{- end -}}
-              {
-                "@type": "ImageObject",
-                "url": "{{ $page.Content }}"
-              }
-            ],
+            "image": "{{ $page.Params.thumbnail }}",
             "url": "{{ $page.Permalink }}",
             "description": "{{ $page.Description }}",
             "author": {
@@ -94,6 +81,7 @@
   }
 </script>
 {{ end }} {{ if eq .Params.type "post" }}
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -124,43 +112,24 @@
   }
 </script>
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "WebPage",
-    "name": "{{ .Title }}",
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "xPath": [
-        "/html/body/header/div/div/div/div/h1",
-        "/html/body/main/article/div/div[2]"
-      ]
-    },
-    "url": "{{ .Permalink }}"
-  }
-</script>
-
 {{ end }} {{ if eq .Params.type "page" }}
+
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
-    "@type": "WebPage",
-    "name": "{{ .Title }}",
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .Permalink }}"
+    },
+    "headline": "{{ .Title }}",
     "description": "{{ .Description }}",
-    "url": "{{ .Permalink }}",
-    "inLanguage": "en-US",
-    "isPartOf": {
-      "@type": "WebSite",
-      "url": "{{ .Site.BaseURL }}"
-    },
-    "about": {
-      "@type": "{{ .Title }}",
-      "name": "{{ .Title }}",
-      "description": "{{ .Description }}"
-    },
-    "mainContentOfPage": {
-      "@type": "WebPageElement",
-      "cssSelector": "main"
+    "articleBody": "{{ .Content }}",
+    "image": "{{ .Params.thumbnail | absURL }}",
+    "author": {
+      "@type": "Organization",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ .Site.Params.bio | absURL }}"
     },
     "publisher": {
       "@type": "Organization",
@@ -168,47 +137,11 @@
       "logo": {
         "@type": "ImageObject",
         "url": "{{ .Site.Params.logo | absURL }}"
+      }
     },
     "datePublished": "{{ .Date }}",
-    "dateModified": "{{ .Params.mod_date }}",
-    "license": "https://creativecommons.org/licenses/by/4.0/"
+    "dateModified": "{{ .Params.mod_date }}"
   }
 </script>
 
 {{ end }}
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Santa's Arrival Countdown",
-    "startDate": "2023-12-17T16:52+01:00",
-    "endDate": "2023-12-24T00:00+01:00",
-    "description": "Join us in the magical countdown to Santa's grand arrival! Can't wait for Santa or having trouble remembering the date? Here's the enchanting time before Santa comes to town. Get ready for joy, laughter, and the warmth of the holiday season!",
-    "location": {
-      "@type": "Place",
-      "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}"
-    },
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-    "organizer": {
-      "@type": "Organization",
-      "name": "{{ .Site.Title }}",
-      "url": "{{ .Site.BaseURL }}"
-    },
-    "image": "{{ "/images/pascobyte-tech-christmas.webp" | absURL }}",
-    "performer": {
-      "@type": "PerformingGroup",
-      "name": "Santa Claus"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "validFrom": "2023-12-17T16:52+01:00",
-      "url": "{{ .Site.BaseURL }}"
-    }
-  }
-</script>
