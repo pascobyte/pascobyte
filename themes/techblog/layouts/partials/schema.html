@@ -1,46 +1,14 @@
 {{ if .IsHome }}
 <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "{{ .Site.Title }}",
-    "url": "{{ .Permalink }}",
-    "image": "{{ .Site.Params.logo | absURL }}",
-      {
-        "@type": "ItemList",
-        "name": "Latest Tech Tales",
-        "itemListElement": [
-          {{- $posts := where .Site.RegularPages.ByDate.Reverse "Type" "post" | first 6 }}
-          {{- range $index, $page := $posts -}}
-          {
-            "@type": "ListItem",
-            "position": {{ $index | add 1 }},
-            "item": {
-              "@type": "BlogPosting",
-              "name": "{{ $page.Title }}",
-              "headline": "{{ $page.Title }}",
-              "image": "{{ $page.Params.thumbnail }}",
-              "url": "{{ $page.Permalink }}",
-              "description": "{{ $page.Description }}",
-              "author": {
-                "@type": "Person",
-                "name": "{{ .Site.Title }}",
-                "url": "{{ .Site.Params.bio | absURL }}"
-              },
-              "datePublished": "{{ .Date }}",
-              "dateModified": "{{ .Params.mod_date }}"
-            }
-          }{{- if ne $index (sub (len $posts) 1) -}},{{- end -}}
-          {{- end -}}
-        ]
-      }
+    "url": "{{ .Permalink }}"
   }
-  </script>
+</script>
 
-{{ end }} 
-
-
-{{ if eq .Params.type "list" }}
+{{ end }} {{ if eq .Params.type "list" }}
 
 <script type="application/ld+json">
   {
@@ -76,9 +44,7 @@
     ]
   }
 </script>
-{{ end }} 
-
-{{ if eq .Params.type "policylist" }}
+{{ end }} {{ if eq .Params.type "policylist" }}
 
 <script type="application/ld+json">
   {
@@ -127,9 +93,7 @@
     ]
   }
 </script>
-{{ end }} 
-
-{{ if eq .Params.type "post" }}
+{{ end }} {{ if eq .Params.type "post" }}
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -165,23 +129,18 @@
     "@context": "https://schema.org/",
     "@type": "WebPage",
     "name": "{{ .Title }}",
-    "speakable":
-    {
-     "@type": "SpeakableSpecification",
-     "xPath": [
-       "/html/body/header/div/div/div/div/h1",
-       "/html/body/main/article/div/div[2]"
-       ]
-     },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "xPath": [
+        "/html/body/header/div/div/div/div/h1",
+        "/html/body/main/article/div/div[2]"
+      ]
+    },
     "url": "{{ .Permalink }}"
-    }
-  
+  }
 </script>
 
-{{ end }} 
-
-
-{{ if eq .Params.type "page" }}
+{{ end }} {{ if eq .Params.type "page" }}
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -214,7 +173,6 @@
     "dateModified": "{{ .Params.mod_date }}",
     "license": "https://creativecommons.org/licenses/by/4.0/"
   }
-  
 </script>
 
 {{ end }}
@@ -253,5 +211,4 @@
       "url": "{{ .Site.BaseURL }}"
     }
   }
-  </script>
-
+</script>
