@@ -1,6 +1,5 @@
 ---
 title: "AI in Marketing: Dynamic Targeting, Predictive Insights, and Customer-Centric Strategies"
-description: "AI is transforming marketing by enabling businesses to target, predict, and personalize campaigns. Enhance customer experiences with AI-powered chatbots, virtual assistants, and recommendations."
 thumbnail: "/images/blog/ai-marketing.webp"
 thumbnail_alt: "AI powered analytics dashboard on laptop and mobile device"
 date: 2023-12-23T15:17:49+01:00

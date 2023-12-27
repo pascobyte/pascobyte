@@ -1,6 +1,5 @@
 ---
 title: "AI in Education: Personalized Learning and Empowered Students"
-description: "AI is transforming education, empowering students with personalized learning experiences. See how AI is revolutionizing education and unlocking the full potential of every learner."
 thumbnail: "/images/blog/freelance-writer-setup.webp"
 thumbnail_alt: "student desk at home"
 date: 2023-12-23T14:01:02+01:00

@@ -1,6 +1,5 @@
 ---
 title: "Privacy Policy"
-description: "Discover our commitment to data privacy & transparency. Learn how we collect info, secure it, and manage cookies. Opt-in for engaging analytics. Visit now!"
 thumbnail: "/images/data-lines.webp"
 thumbnail_alt: "Abstract illutration of data lines on the internet"
 date: 2023-07-20T12:34:13+01:00

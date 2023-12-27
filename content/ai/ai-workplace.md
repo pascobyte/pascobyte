@@ -1,6 +1,5 @@
 ---
 title: "AI Revolutionizing the Workplace: From Automation to Enhanced Productivity"
-description: "AI is transforming the workplace, automating tasks and creating new opportunities for innovation. But what's next? Read our article to find out!"
 thumbnail: "/images/blog/ai-chatbot.webp"
 thumbnail_alt: "AI chatbot doing your work tasks"
 date: 2023-12-23T13:52:03+01:00

@@ -1,6 +1,5 @@
 ---
 title: "AI in Finance: Risk Management, Fraud Detection, and Inclusive Access"
-description: "AI is transforming finance by enhancing risk management, combating fraud, and expanding access. Explore its impact on a future where financial services are more efficient, secure, and accessible for all."
 thumbnail: "/images/blog/chagpt-ai-data-limits.webp"
 thumbnail_alt: "Securevault wh lock icon"
 date: 2023-12-23T14:06:22+01:00

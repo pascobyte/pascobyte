@@ -1,6 +1,5 @@
 ---
 title: "The Power of AI: Meet My Tech Assistant"
-description: "Unveil the tech magic! My AI assistant elevates coding, automates tasks, and crafts content. Go Pro for an extra dose of brilliance! 🌟 #TechTalk #AIWizardry"
 thumbnail: "/images/blog/hexagon-ai-digital-assistant.webp"
 thumbnail_alt: "hexagon shape smart speaker as a AI assistant"
 date: 2023-08-31T15:33:35+01:00

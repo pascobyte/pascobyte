@@ -1,6 +1,5 @@
 ---
 title: "AI Shields from Online Extremes"
-description: "Fed up with online extremists? Discover how AI can spare you drama, harassment & absurdity. Embrace the cold, logical alternative."
 thumbnail: "/images/blog/ai-harful-content-alert-smartphone.webp"
 thumbnail_alt: "AI harful content alert on smartphone"
 date: 2023-08-21T18:56:07+01:00

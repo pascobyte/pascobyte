@@ -1,6 +1,5 @@
 ---
 title: "Understanding ChatGPT Usage Limits [What to Do]"
-description: "Explore the quirks of ChatGPT's usage limits – why they happen, when to expect them, and smart tips for a smoother chat experience. 🚀✨"
 thumbnail: "/images/blog/chagpt-ai-data-limits.webp"
 thumbnail_alt: "data vault with lock representing data usage limit in chatGPT and AI"
 date: 2023-08-18T20:51:54+01:00

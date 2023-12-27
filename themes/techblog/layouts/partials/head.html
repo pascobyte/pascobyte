@@ -22,10 +22,10 @@
 
     {{ else if eq .Params.type "post" }}
     <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Summary | truncate 150 }}">
     {{ else }}
     <title>{{ .Title }} &#45; {{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Description }}">
+    <meta name="description" content="{{ .Summary | truncate 150 }}">
 
   {{ end }}
 

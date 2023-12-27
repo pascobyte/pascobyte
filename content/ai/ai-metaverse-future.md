@@ -1,6 +1,5 @@
 ---
 title: "AI and the Metaverse: Shaping the Future of Online Interactions"
-description: "Embark on a groundbreaking journey with AI and the metaverse, where immersive experiences, personalized interactions, and a vibrant virtual economy await."
 thumbnail: "/images/blog/ai-metaverse.webp"
 thumbnail_alt: "A futuristic scene with advanced technology, where a person is working at a desk with a large holographic screen, overlooking a city at night, and surrounded by a giant holographic face, floating interfaces, and a robot."
 date: 2023-12-22T20:54:48+01:00

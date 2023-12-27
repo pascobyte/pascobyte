@@ -1,6 +1,5 @@
 ---
 title: "Cookie Policy"
-description: "Get comfy and read our Cookie Policy! We’re keeping it transparent and simple, explaining how we use cookies on Pascobyte Blog to enhance your browsing experience."
 thumbnail: "/images/digital-ccokie.webp"
 thumbnail_alt: "abstract illustration of a digital cookie"
 date: 2023-12-20T18:37:48+01:00

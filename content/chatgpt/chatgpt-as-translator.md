@@ -1,6 +1,5 @@
 ---
 title: "ChatGPT Translation: Accuracy and Limitations"
-description: "ChatGPT is a powerful language translation tool that can translate text, code, and creative content. Learn more about its capabilities in this blog post."
 thumbnail: "/images/blog/ai-translator.webp"
 thumbnail_alt: "ChatGPT AI translator"
 date: 2023-08-18T20:51:54+01:00

@@ -1,6 +1,5 @@
 ---
 title: "ChatGPT: Your Digital Shrink [Using Custom Instructions]"
-description: "Ever thought of ChatGPT as your digital shrink? Dive into my blog to explore real-life examples. Try it out for free! Let's make your conversation unique and personal."
 thumbnail: "/images/blog/ai-doctor.webp"
 thumbnail_alt: "ChatGPT AI chat bot working as a Shrink"
 date: 2023-08-18T20:51:54+01:00

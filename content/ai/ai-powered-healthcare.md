@@ -1,6 +1,5 @@
 ---
 title: "AI-Powered Healthcare: Revolutionizing Personalized Treatment and Improved Outcomes"
-description: "Dive into the transformative world of AI-powered healthcare, where personalized treatment plans, enhanced decision-making, and expanded accessibility are paving the way for a healthier future."
 thumbnail: "/images/blog/ai-doctor.webp"
 thumbnail_alt: "AI robot acting as your personal doctor"
 date: 2023-12-23T13:43:28+01:00

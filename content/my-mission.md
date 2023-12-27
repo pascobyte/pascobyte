@@ -1,6 +1,5 @@
 ---
 title: "My Mission"
-description: "Learn about the mission of PascoByte, a technology and AI blog that provides informative and engaging content to help readers stay up-to-date in this industry."
 thumbnail: "/images/ai-laptop.webp"
 thumbnail_alt: "Drawing of laptop with brain and light bulb on screen"
 date: 2023-08-16T00:18:19+01:00

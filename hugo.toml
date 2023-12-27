@@ -4,7 +4,7 @@ title = 'PascoByte'
 theme = 'techblog'
 disableKinds = ["taxonomy", "term"]
 disableHugoGeneratorInject = true
-minifyOutput = false
+minifyOutput = true
 enableRobotsTXT = true
 
 [params]
