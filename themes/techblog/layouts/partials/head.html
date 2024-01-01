@@ -1,9 +1,10 @@
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="robots"
-    content="index, follow, max-snippet:320, max-image-preview:large">
+    content="index, follow, max-snippet:320, max-image-preview:large"
+  />
   <!--
   <meta name="geo.region" content="NL">
   <meta name="geo.placename" content="Netherlands">
@@ -11,27 +12,38 @@
   <meta name="geo.region" content="NL">
   -->
 
-
-  <link rel="stylesheet" href="{{ .Site.Params.main_css | absURL }}">
-  <link rel="stylesheet" href="{{ .Site.Params.secondary_css | absURL }}">
+  <link rel="stylesheet" href="{{ .Site.Params.main_css | absURL }}" />
+  <link rel="stylesheet" href="{{ .Site.Params.secondary_css | absURL }}" />
 
   {{ if .IsHome }}
-  
-    <title>{{ .Site.Title }}: {{ .Site.Params.tagline }}</title>
-    <meta name="description" content="{{ .Site.Params.description }}">
 
-    {{ else if eq .Params.type "post" }}
-    <title>{{ .Title }}</title>
-    <meta name="description" content="{{ .Summary | truncate 150 }}">
-    {{ else }}
-    <title>{{ .Title }} &#45; {{ .Site.Title }}</title>
-    <meta name="description" content="{{ .Summary | truncate 150 }}">
+  <title>{{ .Site.Title }}: {{ .Site.Params.tagline }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}" />
+
+  {{ else if eq .Params.type "post" }}
+  <title>{{ .Title }}</title>
+  <meta
+    name="description"
+    content="{{ with .Params.description }}
+  {{ . }}
+  {{ else }}
+    {{ .Summary | truncate 150 }}
+  {{ end }}"
+  />
+  {{ else }}
+  <title>{{ .Title }} &#45; {{ .Site.Title }}</title>
+  <meta
+    name="description"
+    content="{{ with .Params.description }}
+  {{ . }}
+  {{ else }}
+    {{ .Summary | truncate 150 }}
+  {{ end }}"
+  />
 
   {{ end }}
 
-  
-  <link rel="canonical" href="{{ .Permalink }}">
-  {{ partial "icons.html" . }} 
-  {{ partial "social.html" . }} 
-  {{ partial "schema.html" . }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ partial "icons.html" . }} {{ partial "social.html" . }} {{ partial
+  "schema.html" . }}
 </head>

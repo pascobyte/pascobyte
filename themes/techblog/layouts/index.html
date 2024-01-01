@@ -1,38 +1,49 @@
-{{ define "main" }} 
+{{ define "main" }}
 
 <!-- latest posts -->
 <section class="section is-medium my-5">
-    <div class="container is-vcentered px-5 my-5">
-        <div class="columns is-centered">
-            <div class="column is-two-thirds">
-                <div class="has-text-centered">
-                    <h2 class="title is-2">Latest Tech Tales</h2>
-                    <p class="subtitle is-5 has-text-grey py-3">Where bytes unfold in the latest tech stories. From AI wonders to gadget mysteries, we're decoding the secrets of Silicon Valley. 🚀🕵️‍♂️ #TechTalks</p>
-                </div>
-            </div>
+  <div class="container is-vcentered px-5 my-5">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <div class="has-text-centered">
+          <h2 class="title is-2">Latest Tech Tales</h2>
+          <p class="subtitle is-5 has-text-grey py-3">
+            Where bytes unfold in the latest tech stories. From AI wonders to
+            gadget mysteries, we're decoding the secrets of Silicon Valley. 🚀🕵️‍♂️
+            #TechTalks
+          </p>
         </div>
-        <div class="columns is-multiline mt-6">
-            {{ $latestPosts := where .Site.RegularPages.ByDate.Reverse "Type" "post" | first 6 }}
-            {{ range $latestPosts }}
-            <a href="{{ .Permalink }}" class="column is-one-third">
-              <article class="card">
-                <div class="card-image">
-                  <figure class="image is-19by9">
-                    <img src="{{ .Params.thumbnail | absURL }}" alt="{{ .Params.thumbnail_alt }}" width="240" height="135" loading="lazy" decoding="async">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <h3 class="title is-5 has-text-weight-bold">{{ .Title }}</h3>
-                  <p class="subtitle is-6 pt-3">{{ .Description | truncate 150 }}.</p>
-                </div>
-              </article>
-            </a>
-            {{ end }}
-        </div>
+      </div>
     </div>
+    <div class="columns is-multiline mt-6">
+      {{ $latestPosts := where .Site.RegularPages.ByDate.Reverse "Type" "post" |
+      first 6 }} {{ range $latestPosts }}
+      <a href="{{ .Permalink }}" class="column is-one-third">
+        <article class="card">
+          <div class="card-image">
+            <figure class="image is-19by9">
+              <img
+                src="{{ .Params.thumbnail | absURL }}"
+                alt="{{ .Params.thumbnail_alt }}"
+                width="240"
+                height="135"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <h3 class="title is-5 has-text-weight-bold">{{ .Title }}</h3>
+            <p class="subtitle is-6 pt-3">
+              {{ with .Params.description }} {{ . }} {{ else }} {{ .Summary |
+              truncate 150 }} {{ end }}.
+            </p>
+          </div>
+        </article>
+      </a>
+      {{ end }}
+    </div>
+  </div>
 </section>
 
-
 {{ end }}
-
-

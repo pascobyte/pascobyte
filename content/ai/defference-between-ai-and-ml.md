@@ -33,8 +33,8 @@ In a nutshell, AI and machine learning are like the dynamic duo of the tech worl
 
 So, there you have it, my friend! The difference between AI and machine learning unveiled. Any burning questions or cool tech topics you want to explore next? 🔍✨
 
+---
 
-***
 ## Related Topics
 
 {{< internal_links parentSection="ai" >}}

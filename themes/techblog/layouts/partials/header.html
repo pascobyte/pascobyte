@@ -1,37 +1,46 @@
-{{ partial "navbar.html" . }}
+{{ partial "navbar.html" . }} {{ if .IsHome }}
 
-{{ if .IsHome }}
-  
- <!-- homne Header-->
+<!-- homne Header-->
 <div class="hero">
-    <div class="hero-body">
-        <div class="columns is-vcentered">
-            <div class="column is-three-fifths">
-                <h2 class="title is-1 has-text-weight-bold">Solving Problems, <br />Simply Coded</h2>
-                <p>Welcome to PascoByte, where simplicity meets purpose in every line of code. Explore streamlined solutions that tackle problems with elegance and efficiency. Let's simplify the complex together.</p>
-                <div class="buttons">
-                    <a href="/software/" class="button is-info">Explore Software</a>
-                </div>
-            </div>
-            <div class="column">
-                <figure class="image is-4by5">
-                    <img src="{{"/images/pascobyte-cute-gaming-bot.webp" | absURL }}" alt="PascoByte's cute gaming bot" width="344" height="510">
-                </figure>
-            </div>
-          </div>
+  <div class="hero-body">
+    <div class="columns is-vcentered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-1 has-text-weight-bold">
+          Solving Problems, <br />Simply Coded
+        </h2>
+        <p>
+          Welcome to PascoByte, where simplicity meets purpose in every line of
+          code. Explore streamlined solutions that tackle problems with elegance
+          and efficiency. Let's simplify the complex together.
+        </p>
+        <div class="buttons">
+          <a href="/software/" class="button is-info">Explore Software</a>
+        </div>
+      </div>
+      <div class="column">
+        <figure class="image is-4by5">
+          <img src="{{"/images/pascobyte-cute-gaming-bot.webp" | absURL }}"
+          alt="PascoByte's cute gaming bot" width="344" height="510">
+        </figure>
+      </div>
     </div>
+  </div>
 </div>
 
 {{ else }}
- <!-- page Header-->
+<!-- page Header-->
 <div class="hero is-medium">
-    <div class="hero-body">
-        <div class="columns is-vcentered">
-            <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
-                <h1 class="title is-1">{{ .Title }}</h1>
-            </div>
-          </div>
+  <div class="hero-body">
+    <div class="columns is-vcentered">
+      <div class="column is-three-fifths is-offset-one-fifth has-text-centered">
+        <h1 class="title is-1">{{ .Title }}</h1>
+        <p>
+          {{ with .Params.description }} {{ . }} {{ else }} {{ .Summary |
+          truncate 150 }} {{ end }}
+        </p>
+      </div>
     </div>
+  </div>
 </div>
 
 {{ end }}

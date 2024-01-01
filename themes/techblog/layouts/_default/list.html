@@ -6,7 +6,12 @@
       <label class="label">Filter Results</label>
       <div class="control">
         <!-- Add an input box for filtering above the list -->
-        <input class="input" type="text" id="articleFilter" placeholder="Type to filter results">
+        <input
+          class="input"
+          type="text"
+          id="articleFilter"
+          placeholder="Type to filter results"
+        />
       </div>
     </div>
   </div>
@@ -33,8 +38,11 @@
             </div>
             <div class="card-content">
               <div class="content">
-                  <h3 class="title is-capitalized">{{ .Title  }}</h3>
-                <p class="has-text-grey">{{ .Summary | truncate 150 }}</p>
+                <h3 class="title is-capitalized">{{ .Title }}</h3>
+                <p class="has-text-grey">
+                  {{ with .Params.description }} {{ . }} {{ else }} {{ .Summary
+                  | truncate 150 }} {{ end }}
+                </p>
               </div>
             </div>
           </div>
@@ -47,23 +55,27 @@
 
 <script>
   // JavaScript function to filter articles based on user input
-  document.getElementById("articleFilter").addEventListener("input", function () {
-    var filterValue = this.value.toLowerCase();
-    var articles = document.getElementsByClassName("column is-4");
+  document
+    .getElementById("articleFilter")
+    .addEventListener("input", function () {
+      var filterValue = this.value.toLowerCase();
+      var articles = document.getElementsByClassName("column is-4");
 
-    for (var i = 0; i < articles.length; i++) {
-      var article = articles[i];
-      var title = article.querySelector(".title").innerText.toLowerCase();
-      var summary = article.querySelector(".has-text-grey").innerText.toLowerCase();
+      for (var i = 0; i < articles.length; i++) {
+        var article = articles[i];
+        var title = article.querySelector(".title").innerText.toLowerCase();
+        var summary = article
+          .querySelector(".has-text-grey")
+          .innerText.toLowerCase();
 
-      // Show/hide the article based on the filter
-      if (title.includes(filterValue) || summary.includes(filterValue)) {
-        article.style.display = "";
-      } else {
-        article.style.display = "none";
+        // Show/hide the article based on the filter
+        if (title.includes(filterValue) || summary.includes(filterValue)) {
+          article.style.display = "";
+        } else {
+          article.style.display = "none";
+        }
       }
-    }
-  });
+    });
 </script>
 
 {{ end }}

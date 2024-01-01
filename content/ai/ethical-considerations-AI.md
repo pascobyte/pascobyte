@@ -35,8 +35,8 @@ Wrapping up our friendly chat, the ethical considerations of AI are like navigat
 
 What are your thoughts on the ethical side of AI? Any burning questions or cool insights to share? Let's keep the conversation rolling! 🚀✨
 
+---
 
-***
 ## Related Topics
 
 {{< internal_links parentSection="ai" >}}
