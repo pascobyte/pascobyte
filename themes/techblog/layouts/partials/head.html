@@ -17,7 +17,7 @@
 
   {{ if .IsHome }}
 
-  <title>{{ .Site.Title }}: {{ .Site.Params.tagline }}</title>
+  <title>{{ .Site.Title }}</title>
   <meta name="description" content="{{ .Site.Params.description }}" />
 
   {{ else if eq .Params.type "post" }}

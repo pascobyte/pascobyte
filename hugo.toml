@@ -8,8 +8,7 @@ minifyOutput = true
 enableRobotsTXT = true
 
 [params]
-  tagline = "Simplicity Meets Purpose"
-  description = "Welcome to PascoByte, where simplicity meets purpose in every line of code. Explore streamlined solutions that tackle problems with elegance and efficiency."
+  description = "Pascobyte: Tech solutions made simple. Discover easy-to-follow guides, code snippets, and free tools to tackle your tech challenges. Simplify your tech life with Pascobyte."
   logo = "/images/pascobyte-logo.svg"
   
   main_css = "/css/bul.min.css"
